@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-4613 — Recovery Inhibition (ransomhub) | Status: experimental | Sigma ID: 074540f3-0a36-5ed3-b35b-8e5cc6ab191a -->
+  <rule id="392655" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-4613 — Recovery Inhibition (ransomhub)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

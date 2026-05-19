@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-6676 — Ransomware C2 Communication | Status: test | Sigma ID: db29afaf-77e2-58d8-8556-4577a7944268 -->
+  <rule id="313999" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-6676 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid\.onion/companies/107/comcast-reup-for-sale</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

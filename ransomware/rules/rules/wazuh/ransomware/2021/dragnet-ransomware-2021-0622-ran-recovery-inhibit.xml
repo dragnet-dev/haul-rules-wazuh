@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-0622 — Recovery Inhibition (blackmatter) | Status: deprecated | Sigma ID: 7ca31b82-ed90-5565-a734-1ac4a77b3cf3 -->
+  <rule id="590907" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-0622 — Recovery Inhibition (blackmatter)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

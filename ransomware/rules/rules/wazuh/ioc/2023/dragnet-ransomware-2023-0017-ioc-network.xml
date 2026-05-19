@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-0017 — Ransomware C2 Communication | Status: experimental | Sigma ID: 18f03b8c-75e7-5d94-b5d2-795cabdf0825 -->
+  <rule id="448598" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-0017 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://threeamkelxicjsaf2czjyz2lc4q3ngqkxhhlexyfcp2o6raw4rphyad\.onion/cl/clicks\.php\?uri=MTMROBOTICS/index\.html</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

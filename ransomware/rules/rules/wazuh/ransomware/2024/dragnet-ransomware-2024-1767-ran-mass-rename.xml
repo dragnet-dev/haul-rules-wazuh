@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-1767 — Mass File Rename (SilentRansomGroup) | Status: deprecated | Sigma ID: f70ce617-dd56-536d-ad8f-fdf43626baf5 -->
+  <rule id="521266" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-1767 — Mass File Rename (SilentRansomGroup)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

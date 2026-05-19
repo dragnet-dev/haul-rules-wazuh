@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-4593 — Recovery Inhibition (snatch) | Status: experimental | Sigma ID: 4cf0deec-237a-50cb-ac53-30f5cf708916 -->
+  <rule id="551582" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-4593 — Recovery Inhibition (snatch)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

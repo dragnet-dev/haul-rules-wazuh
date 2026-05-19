@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-2486 — Recovery Inhibition (toufan) | Status: deprecated | Sigma ID: 946484a4-5e5b-5e9c-8120-5ac5150c5f70 -->
+  <rule id="843754" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-2486 — Recovery Inhibition (toufan)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

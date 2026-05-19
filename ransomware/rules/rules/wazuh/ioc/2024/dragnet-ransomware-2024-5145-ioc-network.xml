@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-5145 — Ransomware C2 Communication | Status: experimental | Sigma ID: 12a47815-8c38-59c0-9e79-758ea95733ac -->
+  <rule id="324781" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-5145 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd\.onion/\?id=continentalserves\.com</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

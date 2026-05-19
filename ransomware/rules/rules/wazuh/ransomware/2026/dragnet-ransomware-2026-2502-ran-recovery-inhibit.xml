@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2502 — Recovery Inhibition (termite) | Status: stable | Sigma ID: 12fba38a-6ce9-5741-a140-cc94961e3d38 -->
+  <rule id="917838" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2502 — Recovery Inhibition (termite)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

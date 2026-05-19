@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0558 — Ransomware C2 Communication | Status: test | Sigma ID: 6680d2ae-4c86-5102-ad92-cbe8ab83734d -->
+  <rule id="268932" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0558 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad\.onion/htheli-com</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

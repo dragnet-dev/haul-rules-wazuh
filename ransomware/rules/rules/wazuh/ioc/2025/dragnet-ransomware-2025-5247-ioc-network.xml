@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-5247 — Ransomware C2 Communication | Status: experimental | Sigma ID: aeeb06dc-1e0e-5f9a-b382-e2f80caf0316 -->
+  <rule id="977906" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-5247 — Ransomware C2 Communication</description>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

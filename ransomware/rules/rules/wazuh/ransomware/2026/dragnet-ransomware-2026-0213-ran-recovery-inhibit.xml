@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0213 — Recovery Inhibition (nightspire) | Status: deprecated | Sigma ID: ebe88288-25fe-51a0-bee9-d317a366c16c -->
+  <rule id="274882" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0213 — Recovery Inhibition (nightspire)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

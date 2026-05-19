@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2022-2916 — Ransomware C2 Communication | Status: experimental | Sigma ID: dd4f905d-bdc0-5523-b8a8-5d5ebcf9ae83 -->
+  <rule id="943990" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2022-2916 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad\.onion/muschert-gierse-de</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

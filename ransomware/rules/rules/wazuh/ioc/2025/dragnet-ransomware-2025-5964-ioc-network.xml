@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-5964 — Ransomware C2 Communication | Status: experimental | Sigma ID: 39a3b8b6-e54e-5e76-8001-a45d94084f98 -->
+  <rule id="214998" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-5964 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad\.onion/sato-global-com</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6519 — Recovery Inhibition (anubis) | Status: test | Sigma ID: 6efc87fa-3e81-5fd9-8c13-13b36ac77d39 -->
+  <rule id="241287" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6519 — Recovery Inhibition (anubis)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-2862 — Mass File Rename (medusalocker) | Status: deprecated | Sigma ID: baf1a72a-af8b-5a42-bb37-996704d73d24 -->
+  <rule id="385867" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-2862 — Mass File Rename (medusalocker)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

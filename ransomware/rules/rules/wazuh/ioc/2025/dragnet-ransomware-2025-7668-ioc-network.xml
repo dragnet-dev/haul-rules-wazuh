@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7668 — Ransomware C2 Communication | Status: experimental | Sigma ID: d694243e-54fd-5a58-8bc4-ce00bd92cb82 -->
+  <rule id="569424" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7668 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">https://weyhro\.hk//leaks/crbwater</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

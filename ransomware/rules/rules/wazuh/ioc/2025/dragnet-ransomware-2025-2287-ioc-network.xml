@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-2287 — Ransomware C2 Communication | Status: test | Sigma ID: 1f95828d-8809-5df6-bfef-68ba1f2c4249 -->
+  <rule id="595828" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-2287 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid\.onion/blog/\?post_uuid=a04dda67-69b5-4475-8d72-b81295bee985</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-5335 — Ransomware C2 Communication | Status: experimental | Sigma ID: 0cd45b85-d4a7-5551-9bce-ff5a4fd004d0 -->
+  <rule id="687318" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-5335 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd\.onion/\?id=kivibros\.com</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

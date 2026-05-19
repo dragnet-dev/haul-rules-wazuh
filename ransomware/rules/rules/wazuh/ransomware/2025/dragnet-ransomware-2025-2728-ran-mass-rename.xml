@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-2728 — Mass File Rename (lunalock) | Status: experimental | Sigma ID: 3b46165b-40a3-5399-8ce5-1429640b1a15 -->
+  <rule id="646165" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-2728 — Mass File Rename (lunalock)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

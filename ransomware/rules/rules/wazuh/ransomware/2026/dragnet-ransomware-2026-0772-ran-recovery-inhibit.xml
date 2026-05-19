@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0772 — Recovery Inhibition (LeakBazaar) | Status: stable | Sigma ID: 20abee5f-de8c-5410-b919-d2bad9e3ef42 -->
+  <rule id="554734" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0772 — Recovery Inhibition (LeakBazaar)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

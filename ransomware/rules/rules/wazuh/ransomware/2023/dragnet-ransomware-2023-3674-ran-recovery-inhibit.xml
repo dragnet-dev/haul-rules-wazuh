@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-3674 — Recovery Inhibition (ransomed) | Status: deprecated | Sigma ID: 99b29636-d6f4-51be-b76a-e49dd93430a6 -->
+  <rule id="795296" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-3674 — Recovery Inhibition (ransomed)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

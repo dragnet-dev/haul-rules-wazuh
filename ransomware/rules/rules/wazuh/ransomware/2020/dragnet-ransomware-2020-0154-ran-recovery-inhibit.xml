@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2020-0154 — Recovery Inhibition (ryuk) | Status: deprecated | Sigma ID: e08d5ccd-78e6-5e62-8149-a25df7862272 -->
+  <rule id="106652" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2020-0154 — Recovery Inhibition (ryuk)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

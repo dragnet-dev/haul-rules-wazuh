@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-4659 — Recovery Inhibition (vendetta) | Status: deprecated | Sigma ID: 9018b0c8-9dd6-53ed-8ed2-b0db040392e1 -->
+  <rule id="642990" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-4659 — Recovery Inhibition (vendetta)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

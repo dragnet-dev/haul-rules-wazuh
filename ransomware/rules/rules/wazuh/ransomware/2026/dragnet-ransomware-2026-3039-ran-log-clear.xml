@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-3039 — Event Log Clearing (kairos) | Status: deprecated | Sigma ID: a5a4a144-964e-5cfb-9f02-d8ce7e244b1b -->
+  <rule id="104741" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-3039 — Event Log Clearing (kairos)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

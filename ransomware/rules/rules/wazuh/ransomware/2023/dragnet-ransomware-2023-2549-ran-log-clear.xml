@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-2549 — Event Log Clearing (blackbasta) | Status: experimental | Sigma ID: 646fe17f-2283-529b-94dd-aab79130387a -->
+  <rule id="856301" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-2549 — Event Log Clearing (blackbasta)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

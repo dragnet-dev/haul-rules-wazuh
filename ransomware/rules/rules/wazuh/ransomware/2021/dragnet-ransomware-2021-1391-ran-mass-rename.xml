@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-1391 — Mass File Rename (avaddon) | Status: deprecated | Sigma ID: 67acebd2-f66a-548c-bb8f-9472f094cefb -->
+  <rule id="935179" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-1391 — Mass File Rename (avaddon)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

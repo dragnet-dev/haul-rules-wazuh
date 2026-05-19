@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-0985 — Mass File Rename (clop) | Status: experimental | Sigma ID: 87be92f8-a71c-5e37-94e6-326d7883a830 -->
+  <rule id="546292" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-0985 — Mass File Rename (clop)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0513 — Ransomware C2 Communication | Status: stable | Sigma ID: 3ea8cd5f-72ee-5f7c-a05a-746701969da4 -->
+  <rule id="867373" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0513 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd\.onion/blog/post/gingerichtruckingcom/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-1625 — Recovery Inhibition (kairos) | Status: experimental | Sigma ID: 7796b412-0778-5626-9536-c608ab12440d -->
+  <rule id="447474" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-1625 — Recovery Inhibition (kairos)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-4670 — Event Log Clearing (medusa) | Status: deprecated | Sigma ID: a0450a6c-e8f7-5814-943b-97442020d5aa -->
+  <rule id="807210" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-4670 — Event Log Clearing (medusa)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

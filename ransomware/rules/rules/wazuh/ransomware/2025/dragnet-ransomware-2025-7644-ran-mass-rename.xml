@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-7644 — Mass File Rename (cicada3301) | Status: experimental | Sigma ID: 75726566-62cc-5022-ae43-c0d327fe5ddb -->
+  <rule id="472656" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-7644 — Mass File Rename (cicada3301)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-7698 — Mass File Rename (benzona) | Status: deprecated | Sigma ID: 21de7ef0-c70e-5371-856e-5c3dd2845bd8 -->
+  <rule id="932911" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-7698 — Mass File Rename (benzona)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

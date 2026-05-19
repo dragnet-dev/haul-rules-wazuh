@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-1242 — Mass File Rename (dispossessor) | Status: experimental | Sigma ID: 29cb75cb-eb8a-5c9c-af23-966e37e4a034 -->
+  <rule id="604412" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-1242 — Mass File Rename (dispossessor)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

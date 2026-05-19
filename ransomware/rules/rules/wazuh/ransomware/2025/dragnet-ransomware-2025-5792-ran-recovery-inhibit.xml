@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-5792 — Recovery Inhibition (interlock) | Status: experimental | Sigma ID: dc3edfcd-0114-5366-8f71-097bd6dc4cd5 -->
+  <rule id="127295" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-5792 — Recovery Inhibition (interlock)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

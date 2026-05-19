@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-2383 — Ransomware C2 Communication | Status: stable | Sigma ID: 4d2762b8-1505-5478-bc29-f4c4cffecc45 -->
+  <rule id="764203" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-2383 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">https://handala-hack\.tw/north-country-business-products-breached-2680-pos-terminals-disabled-nationwide/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

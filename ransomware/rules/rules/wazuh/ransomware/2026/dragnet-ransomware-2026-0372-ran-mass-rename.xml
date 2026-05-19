@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0372 — Mass File Rename (kittykatkrew) | Status: stable | Sigma ID: 53d5795e-1cd7-59fd-87ce-ddf23be37c85 -->
+  <rule id="615795" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0372 — Mass File Rename (kittykatkrew)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

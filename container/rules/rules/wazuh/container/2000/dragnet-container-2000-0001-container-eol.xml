@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Container]: dragnet-container-2000-0001 — End-of-Life Base Image | Status: deprecated | Sigma ID: 1ae40140-ce64-51bb-b903-31e9134a9a1d -->
+  <rule id="804014" level="10">
+    <description>Dragnet [Container]: dragnet-container-2000-0001 — End-of-Life Base Image</description>
+    <field name="process.name" type="pcre2">^debian:2\.1\.|^debian:2\.1-</field>
+    <mitre>
+      <id>T1610</id>
+    </mitre>
+  </rule>
+</group>

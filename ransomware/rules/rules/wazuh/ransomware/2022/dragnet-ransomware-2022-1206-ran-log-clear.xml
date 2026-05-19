@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-1206 — Event Log Clearing (cuba) | Status: deprecated | Sigma ID: 3b491bcb-5c94-5dc7-b51b-3be21bd685bf -->
+  <rule id="929884" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-1206 — Event Log Clearing (cuba)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

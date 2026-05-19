@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-2016 — Recovery Inhibition (stormous) | Status: experimental | Sigma ID: 1fc2df5d-79de-5b88-850e-e6f54dace7bf -->
+  <rule id="501215" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-2016 — Recovery Inhibition (stormous)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

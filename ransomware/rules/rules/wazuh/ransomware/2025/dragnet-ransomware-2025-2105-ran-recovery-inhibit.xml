@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-2105 — Recovery Inhibition (everest) | Status: test | Sigma ID: 3990b1d4-b001-5791-82d4-23c118741a3a -->
+  <rule id="416189" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-2105 — Recovery Inhibition (everest)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

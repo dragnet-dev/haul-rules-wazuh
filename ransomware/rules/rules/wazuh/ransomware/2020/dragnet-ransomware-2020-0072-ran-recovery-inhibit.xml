@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2020-0072 — Recovery Inhibition (revil) | Status: deprecated | Sigma ID: cd1abf56-0ebe-5dc0-b390-b646a1742d4f -->
+  <rule id="403647" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2020-0072 — Recovery Inhibition (revil)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

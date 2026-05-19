@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-1174 — Ransomware C2 Communication | Status: experimental | Sigma ID: 16acba45-30ff-52bc-b124-874530aa94f4 -->
+  <rule id="292794" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-1174 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid\.onion/companies/36/cnps-cameroun</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

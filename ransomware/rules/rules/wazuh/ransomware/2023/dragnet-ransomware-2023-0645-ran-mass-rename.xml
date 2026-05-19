@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-0645 — Mass File Rename (qilin) | Status: experimental | Sigma ID: 9e2a96a8-bc02-5fa3-bda3-019ef0fd708f -->
+  <rule id="832296" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-0645 — Mass File Rename (qilin)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

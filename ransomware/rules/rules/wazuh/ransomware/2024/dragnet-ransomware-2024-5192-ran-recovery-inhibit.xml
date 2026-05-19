@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-5192 — Recovery Inhibition (SilentRansomGroup) | Status: deprecated | Sigma ID: 93598164-905f-543b-960f-95e49f1366ea -->
+  <rule id="459816" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-5192 — Recovery Inhibition (SilentRansomGroup)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-3602 — Recovery Inhibition (flocker) | Status: experimental | Sigma ID: 8b2a0c30-6619-592c-b2c6-af7f2d8e2c02 -->
+  <rule id="965132" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-3602 — Recovery Inhibition (flocker)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

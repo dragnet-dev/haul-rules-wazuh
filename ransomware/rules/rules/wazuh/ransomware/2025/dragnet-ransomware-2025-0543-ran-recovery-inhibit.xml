@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-0543 — Recovery Inhibition (direwolf) | Status: experimental | Sigma ID: 6255931b-6d19-574a-a370-c2734ba4064d -->
+  <rule id="955931" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-0543 — Recovery Inhibition (direwolf)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-2831 — Ransomware C2 Communication | Status: experimental | Sigma ID: 14e5b472-8896-5af8-975e-a67324671ba8 -->
+  <rule id="317147" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-2831 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad\.onion/news/myvisajobs</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

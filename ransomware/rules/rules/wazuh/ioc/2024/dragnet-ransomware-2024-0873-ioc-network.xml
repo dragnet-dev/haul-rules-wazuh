@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-0873 — Ransomware C2 Communication | Status: experimental | Sigma ID: 5310836a-e1d4-53f4-af87-e657e1c3f4d2 -->
+  <rule id="910836" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-0873 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd\.onion/\?id=bathfitter\.com</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

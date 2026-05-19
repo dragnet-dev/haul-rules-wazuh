@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-4940 — Event Log Clearing (rhysida) | Status: deprecated | Sigma ID: 4a717c4a-6ea1-5793-a5f7-16321167ccb2 -->
+  <rule id="395484" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-4940 — Event Log Clearing (rhysida)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

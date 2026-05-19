@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-4803 — Recovery Inhibition (werewolves) | Status: deprecated | Sigma ID: 66b820ce-7903-5b7d-9443-f48493677896 -->
+  <rule id="267820" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-4803 — Recovery Inhibition (werewolves)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-4610 — Recovery Inhibition (alphalocker) | Status: experimental | Sigma ID: 6dc4e715-3c22-5231-be68-0575a9da99b2 -->
+  <rule id="210387" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-4610 — Recovery Inhibition (alphalocker)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

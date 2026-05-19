@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-1602 — Ransomware C2 Communication | Status: experimental | Sigma ID: 432d9aa1-4822-5fe1-a42f-314d66366e9f -->
+  <rule id="308154" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-1602 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://wugurgyscp5rxpihef5vl6b6m5ont3b6sezhl7boboso2enib2k3q6qd\.onion#promisedlandcomtwh21-million-usdtime-remaining---buy-files</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

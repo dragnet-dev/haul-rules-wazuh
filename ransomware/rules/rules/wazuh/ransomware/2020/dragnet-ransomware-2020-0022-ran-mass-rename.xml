@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2020-0022 — Mass File Rename (ryuk) | Status: deprecated | Sigma ID: 0cdf3bdf-4b84-53c5-a6bb-5d7e96078d92 -->
+  <rule id="436157" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2020-0022 — Mass File Rename (ryuk)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

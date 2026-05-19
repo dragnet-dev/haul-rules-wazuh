@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-2716 — Recovery Inhibition (medusalocker) | Status: deprecated | Sigma ID: aca10ba8-bc96-5917-afa3-e48a639db5ac -->
+  <rule id="919371" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-2716 — Recovery Inhibition (medusalocker)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

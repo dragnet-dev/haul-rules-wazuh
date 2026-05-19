@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2020-0007 — Recovery Inhibition (maze) | Status: deprecated | Sigma ID: b18166ea-4a16-5c10-a973-f33c9eecdff9 -->
+  <rule id="318166" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2020-0007 — Recovery Inhibition (maze)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-2754 — Event Log Clearing (malas) | Status: experimental | Sigma ID: 786342c0-f684-560f-8c26-6a8459b4704a -->
+  <rule id="981484" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-2754 — Event Log Clearing (malas)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

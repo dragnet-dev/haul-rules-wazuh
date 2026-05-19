@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2946 — Recovery Inhibition (lynx) | Status: test | Sigma ID: e8eb83b0-766a-5a4c-bfac-50391dd5b186 -->
+  <rule id="312383" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2946 — Recovery Inhibition (lynx)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

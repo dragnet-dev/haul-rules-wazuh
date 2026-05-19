@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-0624 — Recovery Inhibition (mosesstaff) | Status: deprecated | Sigma ID: 2547092f-d08f-5dc3-be3a-78114331d4bf -->
+  <rule id="847092" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-0624 — Recovery Inhibition (mosesstaff)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

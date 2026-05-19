@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-0444 — Ransomware C2 Communication | Status: experimental | Sigma ID: 05f54007-62fa-5f96-9307-e6f4f1119099 -->
+  <rule id="654007" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-0444 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">https://handala\.to/israel-largest-cyber-security-college/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-0923 — Mass File Rename (nefilim) | Status: deprecated | Sigma ID: 482bf91b-392f-5e13-b8d0-eeb2306dae9c -->
+  <rule id="435839" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-0923 — Mass File Rename (nefilim)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

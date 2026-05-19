@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-2979 — Recovery Inhibition (mallox) | Status: deprecated | Sigma ID: 662b7ceb-1c64-5c56-a26c-a7a1e41ad5f6 -->
+  <rule id="896604" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-2979 — Recovery Inhibition (mallox)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

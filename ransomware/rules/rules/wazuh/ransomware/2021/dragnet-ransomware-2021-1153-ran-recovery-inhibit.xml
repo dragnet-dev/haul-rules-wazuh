@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-1153 — Recovery Inhibition (suncrypt) | Status: deprecated | Sigma ID: 3c0267f5-da42-5130-b56b-22d80f1d0fc7 -->
+  <rule id="704287" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-1153 — Recovery Inhibition (suncrypt)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-0724 — Ransomware C2 Communication | Status: experimental | Sigma ID: 54a3cccb-4192-5dee-bf98-2e2f8fad01b2 -->
+  <rule id="538412" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-0724 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">https://handala-hack\.to/y-g-new-idan-hacked/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

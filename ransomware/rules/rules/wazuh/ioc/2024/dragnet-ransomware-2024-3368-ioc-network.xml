@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3368 — Ransomware C2 Communication | Status: experimental | Sigma ID: 52462685-6aea-5754-a680-f727be23a555 -->
+  <rule id="846268" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3368 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">https://handala\.to/israel-radars-hacked/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

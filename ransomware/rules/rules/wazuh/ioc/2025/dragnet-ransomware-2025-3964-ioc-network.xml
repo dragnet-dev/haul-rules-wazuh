@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-3964 — Ransomware C2 Communication | Status: experimental | Sigma ID: 784e6c36-79d9-5a01-a12c-91a8e4f6137e -->
+  <rule id="309388" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-3964 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://t33zoj4qwv455fog7qnb2azi5xcdxkixughmmduzbw2rtdgryqfbh6id\.onion/company/trimble-gerrard/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

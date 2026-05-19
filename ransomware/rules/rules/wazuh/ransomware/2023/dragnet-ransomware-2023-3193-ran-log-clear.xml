@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-3193 — Event Log Clearing (losttrust) | Status: deprecated | Sigma ID: 69d7f037-2a90-5054-969b-2a41d7c3b384 -->
+  <rule id="988470" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-3193 — Event Log Clearing (losttrust)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

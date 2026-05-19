@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-0526 — Ransomware C2 Communication | Status: experimental | Sigma ID: bc6aabf6-e5c2-56ed-ac37-9fc7afe36a66 -->
+  <rule id="627787" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-0526 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad\.onion/pilotthomas-com</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

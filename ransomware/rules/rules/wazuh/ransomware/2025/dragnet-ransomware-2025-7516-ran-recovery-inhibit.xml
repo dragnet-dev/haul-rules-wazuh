@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-7516 — Recovery Inhibition (safepay) | Status: experimental | Sigma ID: 3476cd83-8273-5c2a-8fec-b020a74e6c5a -->
+  <rule id="900618" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-7516 — Recovery Inhibition (safepay)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

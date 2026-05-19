@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-5138 — Recovery Inhibition (killsec) | Status: experimental | Sigma ID: f3596206-7dc8-587e-b8a0-bcec7e1ff253 -->
+  <rule id="735962" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-5138 — Recovery Inhibition (killsec)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-6058 — Ransomware C2 Communication | Status: experimental | Sigma ID: 3543e563-1530-5893-ad81-e0dd4d9c0b42 -->
+  <rule id="370256" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-6058 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://peargxn3oki34c4savcbcfqofjjwjnnyrlrbszfv6ujlx36mhrh57did\.onion/Companies/dongaline</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

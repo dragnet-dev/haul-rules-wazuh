@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-2214 — Event Log Clearing (ElDorado) | Status: deprecated | Sigma ID: 9ffad0ba-f36b-5aad-8aa4-e5b90f4eceb6 -->
+  <rule id="352770" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-2214 — Event Log Clearing (ElDorado)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

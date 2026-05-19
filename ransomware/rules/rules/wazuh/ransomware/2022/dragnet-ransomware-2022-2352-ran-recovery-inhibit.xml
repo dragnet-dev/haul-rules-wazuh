@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-2352 — Recovery Inhibition (quantum) | Status: deprecated | Sigma ID: e7b3b62c-e052-5717-97e0-e6b8bc55933d -->
+  <rule id="281396" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-2352 — Recovery Inhibition (quantum)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1835 — Recovery Inhibition (benzona) | Status: deprecated | Sigma ID: 1a9ec025-fc04-510c-95c1-943b8069647a -->
+  <rule id="710002" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-1835 — Recovery Inhibition (benzona)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

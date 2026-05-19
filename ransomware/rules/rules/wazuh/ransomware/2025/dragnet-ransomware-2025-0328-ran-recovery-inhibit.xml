@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-0328 — Recovery Inhibition (kazu) | Status: deprecated | Sigma ID: 9a3dd636-16f0-5a41-a437-cc053ec3fe95 -->
+  <rule id="452296" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-0328 — Recovery Inhibition (kazu)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-0831 — Recovery Inhibition (meow) | Status: experimental | Sigma ID: 10fbeb12-a072-5552-87ea-c3ccb3ccb0f6 -->
+  <rule id="998511" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-0831 — Recovery Inhibition (meow)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-5481 — Recovery Inhibition (devman) | Status: test | Sigma ID: d6883000-fcb3-58ed-8334-b3cb8ccf6843 -->
+  <rule id="568830" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-5481 — Recovery Inhibition (devman)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

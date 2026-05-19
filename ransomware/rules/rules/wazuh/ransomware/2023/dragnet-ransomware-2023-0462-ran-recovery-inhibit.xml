@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-0462 — Recovery Inhibition (noescape) | Status: experimental | Sigma ID: 63e2d6e0-9eb8-5166-a8b4-914f10c30644 -->
+  <rule id="835656" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-0462 — Recovery Inhibition (noescape)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

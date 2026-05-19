@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2023 — Mass File Rename (handala) | Status: test | Sigma ID: ba953508-44d6-5427-8895-7694c34b4f10 -->
+  <rule id="169535" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2023 — Mass File Rename (handala)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

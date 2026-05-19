@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-0290 — Recovery Inhibition (macaw) | Status: deprecated | Sigma ID: f8eeb524-c0e1-52d7-81b1-fc2495531f51 -->
+  <rule id="309875" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-0290 — Recovery Inhibition (macaw)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6826 — Recovery Inhibition (clop) | Status: experimental | Sigma ID: c59c321f-09ae-5da3-ade2-b10d5a3d184d -->
+  <rule id="315632" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6826 — Recovery Inhibition (clop)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

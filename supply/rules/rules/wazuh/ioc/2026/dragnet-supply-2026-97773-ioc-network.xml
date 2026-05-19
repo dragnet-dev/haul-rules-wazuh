@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [IOC]: dragnet-supply-2026-97773 — C2 Network Communication | Status: stable | Sigma ID: 60638311-478f-532f-b2b8-16a08f7ac6e4 -->
+  <rule id="763831" level="8">
+    <description>Dragnet [IOC]: dragnet-supply-2026-97773 — C2 Network Communication</description>
+    <field name="network.destination.hostname" type="pcre2">07d889e2dadce6f3910dcbc253317d28ca61c766Domainsfrclak\.comC2|domain-Domaincallnrwise\.comC2|-IP142\.11\.206\.73C2|proton\.meThreat</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-2071 — Recovery Inhibition (hive) | Status: deprecated | Sigma ID: 8b9d240b-0dec-5025-9ae1-f1f8bb6c43f0 -->
+  <rule id="539724" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-2071 — Recovery Inhibition (hive)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

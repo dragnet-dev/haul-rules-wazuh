@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-0111 — Recovery Inhibition (karakurt) | Status: deprecated | Sigma ID: 73e4eb6f-7994-5a6d-81a7-69c1d75cc12e -->
+  <rule id="427179" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-0111 — Recovery Inhibition (karakurt)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

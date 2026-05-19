@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-5057 — Recovery Inhibition (BrainCipher) | Status: experimental | Sigma ID: 2747a55b-bac6-57d5-82c5-0fab4980261d -->
+  <rule id="896255" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-5057 — Recovery Inhibition (BrainCipher)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-5261 — Ransomware C2 Communication | Status: experimental | Sigma ID: b0e04bac-b4cb-540d-a783-9ae93fe441df -->
+  <rule id="238475" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-5261 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://beast6azu4f7fxjakiayhnssybibsgjnmy77a6duufqw5afjzfjhzuqd\.onion/card/el_paso_quality_dentistry</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

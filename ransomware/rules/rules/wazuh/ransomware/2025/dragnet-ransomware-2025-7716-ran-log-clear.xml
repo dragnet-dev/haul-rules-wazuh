@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-7716 — Event Log Clearing (coinbasecartel) | Status: test | Sigma ID: 25b5e5d4-ed9d-530e-b82f-712f403c69bf -->
+  <rule id="736733" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-7716 — Event Log Clearing (coinbasecartel)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

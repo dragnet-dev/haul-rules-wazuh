@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6298 — Mass File Rename (nightspire) | Status: deprecated | Sigma ID: 9ede9776-ac8d-5383-9baf-47be315ca14f -->
+  <rule id="567097" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6298 — Mass File Rename (nightspire)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-7429 — Event Log Clearing (sinobi) | Status: experimental | Sigma ID: 4df0970a-d2a8-569b-9ef1-2333a18e8566 -->
+  <rule id="447097" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-7429 — Event Log Clearing (sinobi)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

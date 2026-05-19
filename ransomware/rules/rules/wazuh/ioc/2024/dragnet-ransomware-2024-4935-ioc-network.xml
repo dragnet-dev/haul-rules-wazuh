@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-4935 — Ransomware C2 Communication | Status: experimental | Sigma ID: 1843ab52-054e-5ca6-ba40-a8f7003cdcb5 -->
+  <rule id="319795" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-4935 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">https://cactusbloguuodvqjmnzlwetjlpj6aggc6iocwhuupb47laukux7ckid\.onion/posts/DAYSTARTV</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

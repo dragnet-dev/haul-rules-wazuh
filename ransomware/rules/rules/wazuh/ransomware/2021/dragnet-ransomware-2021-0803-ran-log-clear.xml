@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-0803 — Event Log Clearing (pysa) | Status: deprecated | Sigma ID: bf08ac5a-9ed9-5c8e-a156-e5b8d7d39710 -->
+  <rule id="491820" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-0803 — Event Log Clearing (pysa)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

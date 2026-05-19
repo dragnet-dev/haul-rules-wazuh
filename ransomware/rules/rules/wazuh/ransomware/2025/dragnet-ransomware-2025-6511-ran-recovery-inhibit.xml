@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6511 — Recovery Inhibition (clop) | Status: deprecated | Sigma ID: 1c8e94a9-f869-5902-aadf-6109d8136928 -->
+  <rule id="296714" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6511 — Recovery Inhibition (clop)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

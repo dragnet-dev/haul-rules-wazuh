@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-4365 — Recovery Inhibition (rhysida) | Status: experimental | Sigma ID: f2a58cee-898d-51d4-896f-8136fbee8415 -->
+  <rule id="408140" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-4365 — Recovery Inhibition (rhysida)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

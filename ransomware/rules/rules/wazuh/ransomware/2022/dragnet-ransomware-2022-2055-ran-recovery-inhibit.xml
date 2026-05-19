@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-2055 — Recovery Inhibition (dispossessor) | Status: experimental | Sigma ID: 71fe4825-59b8-5f5f-a8dc-3c104f68be0e -->
+  <rule id="143048" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-2055 — Recovery Inhibition (dispossessor)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

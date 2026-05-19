@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-0838 — Mass File Rename (marketo) | Status: deprecated | Sigma ID: 0deb63c5-b692-500b-99ec-48e1ce345c5e -->
+  <rule id="401820" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-0838 — Mass File Rename (marketo)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

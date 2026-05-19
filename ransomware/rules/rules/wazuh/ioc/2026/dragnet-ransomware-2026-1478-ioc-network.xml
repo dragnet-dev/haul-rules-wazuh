@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-1478 — Ransomware C2 Communication | Status: stable | Sigma ID: 627a8360-9d6c-5bb0-bc41-7ad0a92b4089 -->
+  <rule id="204283" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-1478 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd\.onion/companies/idera</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

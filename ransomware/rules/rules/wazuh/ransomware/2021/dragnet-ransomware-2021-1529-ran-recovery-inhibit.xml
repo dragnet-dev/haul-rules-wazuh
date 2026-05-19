@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-1529 — Recovery Inhibition (darkleakmarket) | Status: deprecated | Sigma ID: 2e44b537-1235-5c31-8ca1-a55ee54d6676 -->
+  <rule id="331553" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-1529 — Recovery Inhibition (darkleakmarket)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-7087 — Recovery Inhibition (worldleaks) | Status: test | Sigma ID: c970174c-f317-52aa-95ce-b0f8b342a940 -->
+  <rule id="497017" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-7087 — Recovery Inhibition (worldleaks)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0444 — Recovery Inhibition (stormous) | Status: deprecated | Sigma ID: e3b7a622-a548-52c0-bcaa-ad3771416e24 -->
+  <rule id="179626" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0444 — Recovery Inhibition (stormous)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

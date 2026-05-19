@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-1615 — Recovery Inhibition (mountlocker) | Status: deprecated | Sigma ID: f15f1879-1a37-51bc-9f2b-6ed58ff31c11 -->
+  <rule id="725518" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-1615 — Recovery Inhibition (mountlocker)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

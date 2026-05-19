@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-0094 — Mass File Rename (ragnarlocker) | Status: experimental | Sigma ID: 214f23a0-1b6d-50c1-b094-bdae2030cfdf -->
+  <rule id="202778" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-0094 — Mass File Rename (ragnarlocker)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

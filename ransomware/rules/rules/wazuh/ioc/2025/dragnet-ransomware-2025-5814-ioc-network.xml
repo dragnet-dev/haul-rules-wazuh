@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-5814 — Ransomware C2 Communication | Status: experimental | Sigma ID: ab6d51aa-4c8b-5786-94e1-c594b7f938a5 -->
+  <rule id="146951" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-5814 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://shinypogk4jjniry5qi7247tznop6mxdrdte2k6pdu5cyo43vdzmrwid\.onion/telstra\.html</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

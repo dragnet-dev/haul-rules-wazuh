@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Container]: dragnet-container-2024-0419 — Vulnerable Base Image Pull | Status: deprecated | Sigma ID: 6e52712c-ab62-54da-809e-f2d4a1c1b047 -->
+  <rule id="305271" level="12">
+    <description>Dragnet [Container]: dragnet-container-2024-0419 — Vulnerable Base Image Pull</description>
+    <field name="process.name" type="pcre2">alpine:3\.18|alpine:3\.19|alpine:3\.20|alpine:3\.21|alpine:3\.22|alpine:3\.23|alpine edge:</field>
+    <mitre>
+      <id>T1610</id>
+      <id>T1611</id>
+    </mitre>
+  </rule>
+</group>

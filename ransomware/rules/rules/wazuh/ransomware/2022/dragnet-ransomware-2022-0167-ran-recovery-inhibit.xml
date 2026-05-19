@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-0167 — Recovery Inhibition (blackbasta) | Status: deprecated | Sigma ID: c5283047-94ff-5350-83c0-7e01472ad7a9 -->
+  <rule id="452830" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-0167 — Recovery Inhibition (blackbasta)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

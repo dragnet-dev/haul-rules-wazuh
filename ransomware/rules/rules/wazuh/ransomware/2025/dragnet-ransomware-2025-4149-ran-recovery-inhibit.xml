@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-4149 — Recovery Inhibition (brotherhood) | Status: deprecated | Sigma ID: ccc63355-8238-55e9-bfbb-1eaadd8f81f4 -->
+  <rule id="676633" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-4149 — Recovery Inhibition (brotherhood)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>
