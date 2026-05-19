@@ -5,7 +5,7 @@
     <description>Dragnet [IOC]: dragnet-supply-2026-118729 — C2 Network Communication</description>
     <field name="network.destination.hostname" type="pcre2">t\.m-kosche\.com|git-tanstack\.com</field>
     <field name="network.destination.ip" type="pcre2">94\.154\.172\.43</field>
-    <field name="network.destination.hostname" type="pcre2">https://registry\.npmjs\.org/-/npm/v1/tokens|https://api\.github\.com/search/commits\?q=OhNoWhatsGoingOnWithGitHub&amp;sort=author-date&amp;order=desc&amp;per_page=50|https://registry\.npmjs\.org/-/npm/v1/tokens|http://filev2\.getsession\.org/file/|https://github\.com/oven-sh/bun/releases/download/bun-v1\.3\.13/|https://api\.github\.com/repos/</field>
+    <field name="network.destination.hostname" type="pcre2">https://api\.github\.com/repos/|https://registry\.npmjs\.org/-/npm/v1/tokens|https://api\.github\.com/search/commits\?q=OhNoWhatsGoingOnWithGitHub&amp;sort=author-date&amp;order=desc&amp;per_page=50|https://github\.com/oven-sh/bun/releases/download/bun-v1\.3\.13/|https://registry\.npmjs\.org/-/npm/v1/tokens|http://filev2\.getsession\.org/file/</field>
     <mitre>
       <id>T1071.001</id>
       <id>T1041</id>

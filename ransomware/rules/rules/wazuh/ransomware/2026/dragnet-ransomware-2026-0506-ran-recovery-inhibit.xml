@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0506 — Recovery Inhibition (qilin) | Status: stable | Sigma ID: cfa2a92e-2d15-5c3a-96ad-37d558e1766b -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0506 — Recovery Inhibition (qilin) | Status: test | Sigma ID: cfa2a92e-2d15-5c3a-96ad-37d558e1766b -->
   <rule id="915629" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0506 — Recovery Inhibition (qilin)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>

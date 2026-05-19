@@ -3,7 +3,7 @@
   <!-- Dragnet [Container]: dragnet-container-2024-1246 — Vulnerable Base Image Pull | Status: deprecated | Sigma ID: 01fa6797-fbbf-5318-9d40-e7e0e4387676 -->
   <rule id="666797" level="12">
     <description>Dragnet [Container]: dragnet-container-2024-1246 — Vulnerable Base Image Pull</description>
-    <field name="process.name" type="pcre2">alpine:3\.18|alpine:3\.19|alpine:3\.20|alpine:3\.21|alpine:3\.22|alpine:3\.23|alpine edge:|ubuntu:16\.04-ESM|ubuntu:18\.04-ESM|ubuntu:20\.04-ESM</field>
+    <field name="process.name" type="pcre2">alpine:3\.18|alpine:3\.19|alpine:3\.20|alpine:3\.21|alpine:3\.22|alpine:3\.23|alpine edge:|ubuntu:18\.04-ESM|ubuntu:20\.04-ESM</field>
     <mitre>
       <id>T1610</id>
       <id>T1611</id>

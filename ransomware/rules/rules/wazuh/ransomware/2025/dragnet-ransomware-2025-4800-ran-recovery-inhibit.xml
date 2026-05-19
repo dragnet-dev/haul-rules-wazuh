@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-4800 — Recovery Inhibition (blacknevas) | Status: test | Sigma ID: 6de11107-4ba9-51c1-987f-0e4d43291011 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-4800 — Recovery Inhibition (blacknevas) | Status: experimental | Sigma ID: 6de11107-4ba9-51c1-987f-0e4d43291011 -->
   <rule id="958111" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-4800 — Recovery Inhibition (blacknevas)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>

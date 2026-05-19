@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0506 — Event Log Clearing (qilin) | Status: stable | Sigma ID: b19f7e16-34cc-5b4e-9f6b-de4dd3c609d0 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0506 — Event Log Clearing (qilin) | Status: test | Sigma ID: b19f7e16-34cc-5b4e-9f6b-de4dd3c609d0 -->
   <rule id="267166" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0506 — Event Log Clearing (qilin)</description>
     <field name="process.args" type="pcre2">Clear-EventLog</field>

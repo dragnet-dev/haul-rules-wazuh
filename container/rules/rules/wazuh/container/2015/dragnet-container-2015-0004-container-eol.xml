@@ -3,7 +3,7 @@
   <!-- Dragnet [Container]: dragnet-container-2015-0004 — End-of-Life Base Image | Status: deprecated | Sigma ID: 1c1124ef-6dec-5ae4-bc73-de7e158155ab -->
   <rule id="997998" level="10">
     <description>Dragnet [Container]: dragnet-container-2015-0004 — End-of-Life Base Image</description>
-    <field name="process.name" type="pcre2">^alpine:2\.7\.|^alpine:2\.7-</field>
+    <field name="process.name" type="pcre2">^alpine:2\.6\.|^alpine:2\.6-</field>
     <mitre>
       <id>T1610</id>
     </mitre>
