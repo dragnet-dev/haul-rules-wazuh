@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2556 — Event Log Clearing (lockbit5) | Status: stable | Sigma ID: f5c2c9de-5b78-5043-9732-fabd038cd071 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2556 — Event Log Clearing (lockbit5) | Status: test | Sigma ID: f5c2c9de-5b78-5043-9732-fabd038cd071 -->
   <rule id="487649" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2556 — Event Log Clearing (lockbit5)</description>
     <field name="process.args" type="pcre2">Clear-EventLog</field>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-4876 — Recovery Inhibition (qilin) | Status: test | Sigma ID: 5d34079d-bf5c-534a-8fcd-51552f6da530 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-4876 — Recovery Inhibition (qilin) | Status: experimental | Sigma ID: 5d34079d-bf5c-534a-8fcd-51552f6da530 -->
   <rule id="434079" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-4876 — Recovery Inhibition (qilin)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>

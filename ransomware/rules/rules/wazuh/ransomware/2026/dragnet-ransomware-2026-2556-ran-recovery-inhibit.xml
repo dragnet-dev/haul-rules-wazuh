@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2556 — Recovery Inhibition (lockbit5) | Status: stable | Sigma ID: 4c02e51c-1d63-559b-bb77-536ec9bfc8e3 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2556 — Recovery Inhibition (lockbit5) | Status: test | Sigma ID: 4c02e51c-1d63-559b-bb77-536ec9bfc8e3 -->
   <rule id="416465" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2556 — Recovery Inhibition (lockbit5)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>

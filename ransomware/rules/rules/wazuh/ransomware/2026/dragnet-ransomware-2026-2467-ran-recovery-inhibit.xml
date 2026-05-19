@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2467 — Recovery Inhibition (nitrogen) | Status: stable | Sigma ID: 0dfa9920-26c9-518d-97de-be517ad2a456 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2467 — Recovery Inhibition (nitrogen) | Status: test | Sigma ID: 0dfa9920-26c9-518d-97de-be517ad2a456 -->
   <rule id="978992" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2467 — Recovery Inhibition (nitrogen)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>

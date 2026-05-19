@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1074 — Recovery Inhibition (thegentlemen) | Status: stable | Sigma ID: dfba6306-f092-504e-a83e-befddc93ff4c -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1074 — Recovery Inhibition (thegentlemen) | Status: test | Sigma ID: dfba6306-f092-504e-a83e-befddc93ff4c -->
   <rule id="427463" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-1074 — Recovery Inhibition (thegentlemen)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>

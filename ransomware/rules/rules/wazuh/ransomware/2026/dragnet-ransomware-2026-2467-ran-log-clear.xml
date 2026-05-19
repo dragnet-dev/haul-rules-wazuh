@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2467 — Event Log Clearing (nitrogen) | Status: stable | Sigma ID: c61bdb7c-6d9b-572b-b425-d968c39904f5 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2467 — Event Log Clearing (nitrogen) | Status: test | Sigma ID: c61bdb7c-6d9b-572b-b425-d968c39904f5 -->
   <rule id="768091" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2467 — Event Log Clearing (nitrogen)</description>
     <field name="process.args" type="pcre2">Clear-EventLog</field>

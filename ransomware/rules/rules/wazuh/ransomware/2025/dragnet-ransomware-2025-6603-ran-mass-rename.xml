@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6603 — Mass File Rename (dragonforce) | Status: test | Sigma ID: 70774c96-82c5-527c-b04c-994568ce5ba8 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6603 — Mass File Rename (dragonforce) | Status: experimental | Sigma ID: 70774c96-82c5-527c-b04c-994568ce5ba8 -->
   <rule id="332396" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6603 — Mass File Rename (dragonforce)</description>
     <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>

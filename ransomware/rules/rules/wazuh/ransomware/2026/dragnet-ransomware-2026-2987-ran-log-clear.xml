@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2987 — Event Log Clearing (tengu) | Status: stable | Sigma ID: 6712f668-bd2b-5c6a-b602-6dfd9e28324e -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2987 — Event Log Clearing (tengu) | Status: test | Sigma ID: 6712f668-bd2b-5c6a-b602-6dfd9e28324e -->
   <rule id="274076" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2987 — Event Log Clearing (tengu)</description>
     <field name="process.args" type="pcre2">Clear-EventLog</field>

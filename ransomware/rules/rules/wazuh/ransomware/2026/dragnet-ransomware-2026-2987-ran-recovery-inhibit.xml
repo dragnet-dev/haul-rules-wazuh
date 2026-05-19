@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2987 — Recovery Inhibition (tengu) | Status: stable | Sigma ID: 16d08c27-aabd-5a4a-9d0e-cbb73c1cc7b5 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2987 — Recovery Inhibition (tengu) | Status: test | Sigma ID: 16d08c27-aabd-5a4a-9d0e-cbb73c1cc7b5 -->
   <rule id="805402" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2987 — Recovery Inhibition (tengu)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>

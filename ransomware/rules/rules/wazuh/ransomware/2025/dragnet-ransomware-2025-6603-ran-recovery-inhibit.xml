@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6603 — Recovery Inhibition (dragonforce) | Status: test | Sigma ID: 19e89c01-f043-5e2f-8f47-67eb690823c6 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6603 — Recovery Inhibition (dragonforce) | Status: experimental | Sigma ID: 19e89c01-f043-5e2f-8f47-67eb690823c6 -->
   <rule id="702360" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6603 — Recovery Inhibition (dragonforce)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
