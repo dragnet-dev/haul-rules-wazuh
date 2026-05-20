@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-5610 — Shadow Copy Deletion (rhysida) | Status: test | Sigma ID: 82e1cc3e-3ff6-5f54-aba3-6765f8a87457 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-5610 — Shadow Copy Deletion (rhysida) | Status: experimental | Sigma ID: 82e1cc3e-3ff6-5f54-aba3-6765f8a87457 -->
   <rule id="795020" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-5610 — Shadow Copy Deletion (rhysida)</description>
     <field name="process.args" type="pcre2">Get-WmiObject Win32_ShadowCopy</field>

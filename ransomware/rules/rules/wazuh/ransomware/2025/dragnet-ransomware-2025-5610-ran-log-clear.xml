@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-5610 — Event Log Clearing (rhysida) | Status: test | Sigma ID: d7095409-7c7f-5a8b-aae8-b5a7a77f1265 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-5610 — Event Log Clearing (rhysida) | Status: experimental | Sigma ID: d7095409-7c7f-5a8b-aae8-b5a7a77f1265 -->
   <rule id="570954" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-5610 — Event Log Clearing (rhysida)</description>
     <field name="process.args" type="pcre2">Clear-EventLog</field>

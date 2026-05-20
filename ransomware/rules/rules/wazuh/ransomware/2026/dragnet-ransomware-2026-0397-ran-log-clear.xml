@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0397 — Event Log Clearing (qilin) | Status: stable | Sigma ID: db7e8ae7-e369-5209-9a21-57e4fa353f58 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0397 — Event Log Clearing (qilin) | Status: test | Sigma ID: db7e8ae7-e369-5209-9a21-57e4fa353f58 -->
   <rule id="326698" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0397 — Event Log Clearing (qilin)</description>
     <field name="process.args" type="pcre2">Clear-EventLog</field>

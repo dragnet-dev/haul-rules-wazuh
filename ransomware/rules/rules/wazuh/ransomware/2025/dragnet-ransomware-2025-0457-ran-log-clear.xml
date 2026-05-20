@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-0457 — Event Log Clearing (clop) | Status: test | Sigma ID: da02aac1-bb88-5ba3-8762-dc94d390ccf8 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-0457 — Event Log Clearing (clop) | Status: experimental | Sigma ID: da02aac1-bb88-5ba3-8762-dc94d390ccf8 -->
   <rule id="281482" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-0457 — Event Log Clearing (clop)</description>
     <field name="process.args" type="pcre2">Clear-EventLog</field>

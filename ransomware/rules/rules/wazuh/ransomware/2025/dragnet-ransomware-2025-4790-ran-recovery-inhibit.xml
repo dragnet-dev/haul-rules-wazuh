@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-4790 — Recovery Inhibition (incransom) | Status: test | Sigma ID: 5a3e4001-3e53-584f-aa9c-e2a9317fb991 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-4790 — Recovery Inhibition (incransom) | Status: experimental | Sigma ID: 5a3e4001-3e53-584f-aa9c-e2a9317fb991 -->
   <rule id="646240" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-4790 — Recovery Inhibition (incransom)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>

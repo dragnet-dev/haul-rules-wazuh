@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6411 — Recovery Inhibition (clop) | Status: test | Sigma ID: 45c93017-5ff5-5157-bec2-41c4f7c01542 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6411 — Recovery Inhibition (clop) | Status: experimental | Sigma ID: 45c93017-5ff5-5157-bec2-41c4f7c01542 -->
   <rule id="229301" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6411 — Recovery Inhibition (clop)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>

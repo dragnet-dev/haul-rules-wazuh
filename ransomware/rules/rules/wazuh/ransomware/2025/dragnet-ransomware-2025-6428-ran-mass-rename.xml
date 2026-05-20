@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6428 — Mass File Rename (clop) | Status: test | Sigma ID: d4bc0356-ac8a-5ed3-a256-09af6fdac096 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6428 — Mass File Rename (clop) | Status: experimental | Sigma ID: d4bc0356-ac8a-5ed3-a256-09af6fdac096 -->
   <rule id="849203" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6428 — Mass File Rename (clop)</description>
     <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>

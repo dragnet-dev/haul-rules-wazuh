@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1622 — Event Log Clearing (handala) | Status: stable | Sigma ID: f501adbb-9563-574c-b155-2d326e0d7c7d -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1622 — Event Log Clearing (handala) | Status: test | Sigma ID: f501adbb-9563-574c-b155-2d326e0d7c7d -->
   <rule id="468429" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-1622 — Event Log Clearing (handala)</description>
     <field name="process.args" type="pcre2">Clear-EventLog</field>

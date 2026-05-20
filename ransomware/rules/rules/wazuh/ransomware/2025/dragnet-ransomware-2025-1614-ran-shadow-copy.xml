@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-1614 — Shadow Copy Deletion (clop) | Status: test | Sigma ID: 5f1b95ff-4fd3-5a54-9ea2-7ad20093b0fc -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-1614 — Shadow Copy Deletion (clop) | Status: experimental | Sigma ID: 5f1b95ff-4fd3-5a54-9ea2-7ad20093b0fc -->
   <rule id="722795" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-1614 — Shadow Copy Deletion (clop)</description>
     <field name="process.args" type="pcre2">Get-WmiObject Win32_ShadowCopy</field>

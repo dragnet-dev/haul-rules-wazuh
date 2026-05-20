@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0397 — Recovery Inhibition (qilin) | Status: stable | Sigma ID: 7c14c9c3-7afe-5b99-b650-6fdf1aef25d7 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0397 — Recovery Inhibition (qilin) | Status: test | Sigma ID: 7c14c9c3-7afe-5b99-b650-6fdf1aef25d7 -->
   <rule id="286369" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0397 — Recovery Inhibition (qilin)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>

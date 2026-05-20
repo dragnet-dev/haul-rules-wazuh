@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0397 — Shadow Copy Deletion (qilin) | Status: stable | Sigma ID: e6914cd0-4726-58a4-8a6d-ffa5a5666c21 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0397 — Shadow Copy Deletion (qilin) | Status: test | Sigma ID: e6914cd0-4726-58a4-8a6d-ffa5a5666c21 -->
   <rule id="650636" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0397 — Shadow Copy Deletion (qilin)</description>
     <field name="process.args" type="pcre2">Get-WmiObject Win32_ShadowCopy</field>

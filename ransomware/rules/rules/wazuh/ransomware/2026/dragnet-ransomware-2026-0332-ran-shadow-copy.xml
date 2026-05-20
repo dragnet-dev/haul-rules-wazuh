@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0332 — Shadow Copy Deletion (lockbit5) | Status: stable | Sigma ID: 23c0a08a-7555-5634-af8c-7ba2f32c4367 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0332 — Shadow Copy Deletion (lockbit5) | Status: test | Sigma ID: 23c0a08a-7555-5634-af8c-7ba2f32c4367 -->
   <rule id="781008" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0332 — Shadow Copy Deletion (lockbit5)</description>
     <field name="process.args" type="pcre2">Get-WmiObject Win32_ShadowCopy</field>

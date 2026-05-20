@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1077 — Shadow Copy Deletion (thegentlemen) | Status: stable | Sigma ID: 725e547d-121e-50fb-99e2-3ffb08f35113 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1077 — Shadow Copy Deletion (thegentlemen) | Status: test | Sigma ID: 725e547d-121e-50fb-99e2-3ffb08f35113 -->
   <rule id="361454" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-1077 — Shadow Copy Deletion (thegentlemen)</description>
     <field name="process.args" type="pcre2">Get-WmiObject Win32_ShadowCopy</field>
