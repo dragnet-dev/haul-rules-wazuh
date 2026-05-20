@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6763 — Recovery Inhibition (blackshrantac) | Status: test | Sigma ID: 02552528-1109-5b2d-8aa6-840ffdfa0dd8 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6763 — Recovery Inhibition (blackshrantac) | Status: experimental | Sigma ID: 02552528-1109-5b2d-8aa6-840ffdfa0dd8 -->
   <rule id="852528" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6763 — Recovery Inhibition (blackshrantac)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>

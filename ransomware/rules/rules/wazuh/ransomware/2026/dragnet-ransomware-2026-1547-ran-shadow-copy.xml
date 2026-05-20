@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1547 — Shadow Copy Deletion (qilin) | Status: stable | Sigma ID: c336cfd5-a196-5c53-b7d6-75a5f9777279 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1547 — Shadow Copy Deletion (qilin) | Status: test | Sigma ID: c336cfd5-a196-5c53-b7d6-75a5f9777279 -->
   <rule id="558223" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-1547 — Shadow Copy Deletion (qilin)</description>
     <field name="process.args" type="pcre2">Get-WmiObject Win32_ShadowCopy</field>

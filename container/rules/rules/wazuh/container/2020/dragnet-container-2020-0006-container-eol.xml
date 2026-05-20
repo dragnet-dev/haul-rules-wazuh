@@ -3,7 +3,7 @@
   <!-- Dragnet [Container]: dragnet-container-2020-0006 — End-of-Life Base Image | Status: deprecated | Sigma ID: 01957c89-3f58-5d35-9047-73071c4474b9 -->
   <rule id="532489" level="10">
     <description>Dragnet [Container]: dragnet-container-2020-0006 — End-of-Life Base Image</description>
-    <field name="process.name" type="pcre2">^python:2\.7\.|^python:2\.7-</field>
+    <field name="process.name" type="pcre2">^python:3\.5\.|^python:3\.5-</field>
     <mitre>
       <id>T1610</id>
     </mitre>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6763 — Event Log Clearing (blackshrantac) | Status: test | Sigma ID: b5679eaa-b6e2-5fc5-9ae1-9e0a31b422e6 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6763 — Event Log Clearing (blackshrantac) | Status: experimental | Sigma ID: b5679eaa-b6e2-5fc5-9ae1-9e0a31b422e6 -->
   <rule id="150878" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6763 — Event Log Clearing (blackshrantac)</description>
     <field name="process.args" type="pcre2">Clear-EventLog</field>
