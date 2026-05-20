@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-3093 — Event Log Clearing (securotrop) | Status: stable | Sigma ID: d029f4ad-1e6b-5126-bd5e-bf8b35cb4e3e -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-3093 — Event Log Clearing (securotrop) | Status: test | Sigma ID: d029f4ad-1e6b-5126-bd5e-bf8b35cb4e3e -->
   <rule id="384794" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-3093 — Event Log Clearing (securotrop)</description>
     <field name="process.args" type="pcre2">Clear-EventLog</field>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1674 — Recovery Inhibition (payoutsking) | Status: stable | Sigma ID: e29d934d-00da-5271-a284-52afe70dafeb -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1674 — Recovery Inhibition (payoutsking) | Status: test | Sigma ID: e29d934d-00da-5271-a284-52afe70dafeb -->
   <rule id="587793" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-1674 — Recovery Inhibition (payoutsking)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>

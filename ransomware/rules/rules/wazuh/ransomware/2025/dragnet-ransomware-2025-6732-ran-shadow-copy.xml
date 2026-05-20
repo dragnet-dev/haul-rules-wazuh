@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6732 — Shadow Copy Deletion (coinbasecartel) | Status: test | Sigma ID: 421b415b-6fe0-56ba-8c74-ece3e4253262 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6732 — Shadow Copy Deletion (coinbasecartel) | Status: experimental | Sigma ID: 421b415b-6fe0-56ba-8c74-ece3e4253262 -->
   <rule id="547415" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6732 — Shadow Copy Deletion (coinbasecartel)</description>
     <field name="process.args" type="pcre2">Get-WmiObject Win32_ShadowCopy</field>

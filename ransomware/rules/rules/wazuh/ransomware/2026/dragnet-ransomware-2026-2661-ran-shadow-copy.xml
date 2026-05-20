@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2661 — Shadow Copy Deletion (play) | Status: stable | Sigma ID: b264c8ea-1551-5c0d-ac65-bcf41819ff3f -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2661 — Shadow Copy Deletion (play) | Status: test | Sigma ID: b264c8ea-1551-5c0d-ac65-bcf41819ff3f -->
   <rule id="102368" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2661 — Shadow Copy Deletion (play)</description>
     <field name="process.args" type="pcre2">Get-WmiObject Win32_ShadowCopy</field>

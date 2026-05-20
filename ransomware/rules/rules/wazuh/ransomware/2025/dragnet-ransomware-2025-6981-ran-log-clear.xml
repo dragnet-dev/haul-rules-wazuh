@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6981 — Event Log Clearing (securotrop) | Status: test | Sigma ID: 3ea8d735-4490-5d90-b49e-9df73e759efc -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6981 — Event Log Clearing (securotrop) | Status: experimental | Sigma ID: 3ea8d735-4490-5d90-b49e-9df73e759efc -->
   <rule id="804617" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6981 — Event Log Clearing (securotrop)</description>
     <field name="process.args" type="pcre2">Clear-EventLog</field>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-3093 — Recovery Inhibition (securotrop) | Status: stable | Sigma ID: 2f683c5e-6442-5976-afb8-38aaa2e9b5eb -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-3093 — Recovery Inhibition (securotrop) | Status: test | Sigma ID: 2f683c5e-6442-5976-afb8-38aaa2e9b5eb -->
   <rule id="529405" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-3093 — Recovery Inhibition (securotrop)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>

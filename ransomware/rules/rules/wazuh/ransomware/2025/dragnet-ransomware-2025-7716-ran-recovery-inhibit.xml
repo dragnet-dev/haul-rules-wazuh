@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-7716 — Recovery Inhibition (coinbasecartel) | Status: test | Sigma ID: 66e133ff-cdb1-5e9f-8794-9aa2e3a894d2 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-7716 — Recovery Inhibition (coinbasecartel) | Status: experimental | Sigma ID: 66e133ff-cdb1-5e9f-8794-9aa2e3a894d2 -->
   <rule id="270133" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-7716 — Recovery Inhibition (coinbasecartel)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6732 — Event Log Clearing (coinbasecartel) | Status: test | Sigma ID: 7bbc78a2-3da8-598b-b115-59fda78b92d0 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6732 — Event Log Clearing (coinbasecartel) | Status: experimental | Sigma ID: 7bbc78a2-3da8-598b-b115-59fda78b92d0 -->
   <rule id="567678" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6732 — Event Log Clearing (coinbasecartel)</description>
     <field name="process.args" type="pcre2">Clear-EventLog</field>

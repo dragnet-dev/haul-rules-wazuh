@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1674 — Mass File Rename (payoutsking) | Status: stable | Sigma ID: 8926eb03-ae72-578d-bfcb-26c0a56a2dfc -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1674 — Mass File Rename (payoutsking) | Status: test | Sigma ID: 8926eb03-ae72-578d-bfcb-26c0a56a2dfc -->
   <rule id="585291" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-1674 — Mass File Rename (payoutsking)</description>
     <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>

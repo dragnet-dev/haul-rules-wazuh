@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-4392 — Event Log Clearing (play) | Status: test | Sigma ID: 7395b979-7cfd-5a27-9dc1-829eb4ca38b7 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-4392 — Event Log Clearing (play) | Status: experimental | Sigma ID: 7395b979-7cfd-5a27-9dc1-829eb4ca38b7 -->
   <rule id="383319" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-4392 — Event Log Clearing (play)</description>
     <field name="process.args" type="pcre2">Clear-EventLog</field>

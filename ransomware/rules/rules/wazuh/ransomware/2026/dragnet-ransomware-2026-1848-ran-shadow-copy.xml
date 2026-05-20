@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1848 — Shadow Copy Deletion (payoutsking) | Status: stable | Sigma ID: 9c2c1983-7983-5ade-b499-35f7aa9196e9 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1848 — Shadow Copy Deletion (payoutsking) | Status: test | Sigma ID: 9c2c1983-7983-5ade-b499-35f7aa9196e9 -->
   <rule id="800419" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-1848 — Shadow Copy Deletion (payoutsking)</description>
     <field name="process.args" type="pcre2">Get-WmiObject Win32_ShadowCopy</field>

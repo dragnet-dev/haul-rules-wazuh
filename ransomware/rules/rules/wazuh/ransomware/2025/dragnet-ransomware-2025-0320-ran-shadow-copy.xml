@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-0320 — Shadow Copy Deletion (direwolf) | Status: test | Sigma ID: f4f30618-97d0-5b4f-9946-75c0ba795af8 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-0320 — Shadow Copy Deletion (direwolf) | Status: experimental | Sigma ID: f4f30618-97d0-5b4f-9946-75c0ba795af8 -->
   <rule id="779306" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-0320 — Shadow Copy Deletion (direwolf)</description>
     <field name="process.args" type="pcre2">Get-WmiObject Win32_ShadowCopy</field>

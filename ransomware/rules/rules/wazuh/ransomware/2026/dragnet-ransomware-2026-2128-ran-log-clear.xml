@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2128 — Event Log Clearing (payoutsking) | Status: stable | Sigma ID: 8bf2e3b7-476f-5dee-81e2-fc3de5a24157 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2128 — Event Log Clearing (payoutsking) | Status: test | Sigma ID: 8bf2e3b7-476f-5dee-81e2-fc3de5a24157 -->
   <rule id="982863" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2128 — Event Log Clearing (payoutsking)</description>
     <field name="process.args" type="pcre2">Clear-EventLog</field>

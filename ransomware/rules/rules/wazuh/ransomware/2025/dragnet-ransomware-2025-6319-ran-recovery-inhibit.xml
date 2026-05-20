@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6319 — Recovery Inhibition (play) | Status: test | Sigma ID: a725c97a-cfa9-5856-bcd6-9cfd5997e662 -->
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6319 — Recovery Inhibition (play) | Status: experimental | Sigma ID: a725c97a-cfa9-5856-bcd6-9cfd5997e662 -->
   <rule id="916129" level="10">
     <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6319 — Recovery Inhibition (play)</description>
     <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
