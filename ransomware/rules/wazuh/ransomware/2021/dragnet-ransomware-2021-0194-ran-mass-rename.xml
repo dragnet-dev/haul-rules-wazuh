@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-0194 — Mass File Rename (pay2key) | Status: deprecated | Sigma ID: 22629b68-74ab-5075-8740-8cb3245b3d16 -->
+  <rule id="120756" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-0194 — Mass File Rename (pay2key)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

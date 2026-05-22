@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0214 — Mass File Rename (anubis) | Status: deprecated | Sigma ID: f710652b-b2b3-530f-b789-d3b40bd4854f -->
+  <rule id="771065" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0214 — Mass File Rename (anubis)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2020-0097 — Recovery Inhibition (lorenz) | Status: deprecated | Sigma ID: a49f344e-d448-54cf-a060-69c5c4ac7fa1 -->
+  <rule id="879934" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2020-0097 — Recovery Inhibition (lorenz)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-5989 — Ransomware C2 Communication | Status: experimental | Sigma ID: b5ff31a3-ea04-592b-9c1f-8ad693ba15cc -->
+  <rule id="369531" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-5989 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd\.onion/articles/Taiwan_Flex_Electronics\.html</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

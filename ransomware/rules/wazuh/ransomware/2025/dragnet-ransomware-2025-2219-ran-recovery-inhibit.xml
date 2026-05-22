@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-2219 — Recovery Inhibition (medusa) | Status: experimental | Sigma ID: d2efcb93-1fd8-5c4b-adab-b6b7d5b2c822 -->
+  <rule id="712139" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-2219 — Recovery Inhibition (medusa)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

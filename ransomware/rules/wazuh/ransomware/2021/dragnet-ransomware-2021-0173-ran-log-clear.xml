@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-0173 — Event Log Clearing (karma) | Status: deprecated | Sigma ID: 7b18bfb9-f36f-57a4-9a43-725aea2d69d2 -->
+  <rule id="553599" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-0173 — Event Log Clearing (karma)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

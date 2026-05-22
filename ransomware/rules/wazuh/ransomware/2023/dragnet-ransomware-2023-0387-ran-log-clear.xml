@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-0387 — Event Log Clearing (lockbit3) | Status: experimental | Sigma ID: 52564be6-943b-558d-b24b-b6955b4f3c41 -->
+  <rule id="956574" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-0387 — Event Log Clearing (lockbit3)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

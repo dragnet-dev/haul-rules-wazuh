@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2358 — Recovery Inhibition (osiris) | Status: deprecated | Sigma ID: 0ab519d6-c1ad-53f7-b942-d5990a8d3095 -->
+  <rule id="144317" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2358 — Recovery Inhibition (osiris)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

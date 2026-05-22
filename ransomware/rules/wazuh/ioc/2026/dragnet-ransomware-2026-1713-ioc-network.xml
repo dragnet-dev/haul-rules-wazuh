@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-1713 — Ransomware C2 Communication | Status: stable | Sigma ID: adbf5f9f-e3f6-5827-92ca-1b7b2c84d1ea -->
+  <rule id="916735" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-1713 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid\.onion/companies/39/smilepoint-dental-group</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

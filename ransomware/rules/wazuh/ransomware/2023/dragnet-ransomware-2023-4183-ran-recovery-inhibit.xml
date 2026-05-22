@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-4183 — Recovery Inhibition (nokoyawa) | Status: experimental | Sigma ID: e662ee4c-a506-597c-b26c-9eab16b59ea8 -->
+  <rule id="253710" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-4183 — Recovery Inhibition (nokoyawa)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

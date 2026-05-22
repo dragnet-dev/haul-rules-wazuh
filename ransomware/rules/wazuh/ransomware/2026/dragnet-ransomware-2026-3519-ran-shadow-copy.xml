@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-3519 — Shadow Copy Deletion (interlock) | Status: test | Sigma ID: 4ca7bbf6-fee3-58fa-8493-b81d03135840 -->
+  <rule id="540539" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-3519 — Shadow Copy Deletion (interlock)</description>
+    <field name="process.args" type="pcre2">Get-WmiObject Win32_ShadowCopy</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2">^delete$|^shadows$</field>
+    <field name="process.name" type="pcre2">\\vssadmin\.exe$</field>
+    <field name="process.args" type="pcre2">^shadowcopy$|^delete$</field>
+    <field name="process.name" type="pcre2">\\wmic\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

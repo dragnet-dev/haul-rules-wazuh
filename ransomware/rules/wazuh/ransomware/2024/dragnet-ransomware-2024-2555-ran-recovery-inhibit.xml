@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-2555 — Recovery Inhibition (apt73) | Status: experimental | Sigma ID: 1e528d4f-134d-5aab-a22c-24f87413eb61 -->
+  <rule id="484614" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-2555 — Recovery Inhibition (apt73)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

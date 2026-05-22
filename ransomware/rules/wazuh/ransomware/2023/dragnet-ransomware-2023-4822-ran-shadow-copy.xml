@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-4822 — Shadow Copy Deletion (incransom) | Status: experimental | Sigma ID: 859a0c21-a66b-5eca-8b1e-8c0bda7f68df -->
+  <rule id="500652" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-4822 — Shadow Copy Deletion (incransom)</description>
+    <field name="process.args" type="pcre2">Get-WmiObject Win32_ShadowCopy</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2">^delete$|^shadows$</field>
+    <field name="process.name" type="pcre2">\\vssadmin\.exe$</field>
+    <field name="process.args" type="pcre2">^shadowcopy$|^delete$</field>
+    <field name="process.name" type="pcre2">\\wmic\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

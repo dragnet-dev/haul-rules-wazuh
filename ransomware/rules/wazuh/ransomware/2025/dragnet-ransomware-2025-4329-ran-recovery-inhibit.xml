@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-4329 — Recovery Inhibition (cephalus) | Status: deprecated | Sigma ID: c9b3c25c-ce72-58ab-98e0-40f5cc4819e8 -->
+  <rule id="720602" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-4329 — Recovery Inhibition (cephalus)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

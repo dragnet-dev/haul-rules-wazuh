@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2020-0050 — Recovery Inhibition (doppelpaymer) | Status: deprecated | Sigma ID: f4da7262-f551-5b34-bf52-64ade182c299 -->
+  <rule id="464272" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2020-0050 — Recovery Inhibition (doppelpaymer)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

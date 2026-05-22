@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-1284 — Ransomware C2 Communication | Status: test | Sigma ID: 2dbbe484-994f-5d14-bfe5-b31a900078f5 -->
+  <rule id="173264" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-1284 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad\.onion/news/Hosowaka_Micron_Group/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

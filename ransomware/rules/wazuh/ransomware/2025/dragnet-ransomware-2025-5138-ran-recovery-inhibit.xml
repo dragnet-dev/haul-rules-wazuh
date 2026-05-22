@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-5138 — Recovery Inhibition (coinbasecartel) | Status: experimental | Sigma ID: 6f2c0469-02d0-5af9-ad0d-637573ce1a34 -->
+  <rule id="980404" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-5138 — Recovery Inhibition (coinbasecartel)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

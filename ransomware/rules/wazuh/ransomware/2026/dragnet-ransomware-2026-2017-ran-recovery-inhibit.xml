@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2017 — Recovery Inhibition (nova) | Status: stable | Sigma ID: f5c52321-a51c-5dce-a44b-bc996c06a0cc -->
+  <rule id="792523" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2017 — Recovery Inhibition (nova)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

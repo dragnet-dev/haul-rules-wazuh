@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3848 — Ransomware C2 Communication | Status: experimental | Sigma ID: 5b2dae16-3a8e-5cd6-acc0-c6ca8256c27e -->
+  <rule id="239054" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3848 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">https://handala\.to/zionists-high-group-hacked/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

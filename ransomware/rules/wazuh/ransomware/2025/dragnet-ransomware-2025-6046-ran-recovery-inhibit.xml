@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6046 — Recovery Inhibition (nitrogen) | Status: experimental | Sigma ID: ff62a09f-d75a-5aee-8cd3-ea64331d93a3 -->
+  <rule id="590020" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6046 — Recovery Inhibition (nitrogen)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

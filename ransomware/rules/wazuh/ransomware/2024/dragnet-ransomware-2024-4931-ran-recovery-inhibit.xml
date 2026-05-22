@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-4931 — Recovery Inhibition (funksec) | Status: experimental | Sigma ID: 2178a6c1-ab25-5dd0-aed2-9da49cd2e034 -->
+  <rule id="277388" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-4931 — Recovery Inhibition (funksec)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

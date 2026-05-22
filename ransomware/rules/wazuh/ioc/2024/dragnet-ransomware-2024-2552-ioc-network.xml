@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-2552 — Ransomware C2 Communication | Status: experimental | Sigma ID: 148b4163-415c-535f-a1dd-812f1c64aa8a -->
+  <rule id="679416" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-2552 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://k67ivvik3dikqi4gy4ua7xa6idijl4si7k5ad5lotbaeirfcsx4sgbid\.onion/download/marthamedeiros\.com\.br</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

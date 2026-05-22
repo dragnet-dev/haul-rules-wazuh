@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7778 — Ransomware C2 Communication | Status: experimental | Sigma ID: ad70ed5d-f358-5d15-9b5d-6ac90b1196f8 -->
+  <rule id="946957" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7778 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://funksec\.top/mandarin\.com\.br</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

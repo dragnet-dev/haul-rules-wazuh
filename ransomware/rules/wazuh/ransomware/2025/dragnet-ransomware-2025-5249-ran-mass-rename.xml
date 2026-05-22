@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-5249 — Mass File Rename (akira) | Status: deprecated | Sigma ID: 3d2a7fb7-1ddf-5a69-baab-f77b37b1b8f9 -->
+  <rule id="768447" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-5249 — Mass File Rename (akira)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

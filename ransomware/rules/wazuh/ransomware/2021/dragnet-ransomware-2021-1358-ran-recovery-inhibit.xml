@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-1358 — Recovery Inhibition (arvinclub) | Status: deprecated | Sigma ID: f55bad9e-0da3-594a-87f9-b26a2b6d5628 -->
+  <rule id="172269" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-1358 — Recovery Inhibition (arvinclub)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

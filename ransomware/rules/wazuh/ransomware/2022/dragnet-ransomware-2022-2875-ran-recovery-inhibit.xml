@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-2875 — Recovery Inhibition (avoslocker) | Status: deprecated | Sigma ID: 8cf2529e-328f-52c9-aca1-42b89e68dc82 -->
+  <rule id="555252" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-2875 — Recovery Inhibition (avoslocker)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-0043 — Ransomware C2 Communication | Status: experimental | Sigma ID: 50dd3d94-d3c3-50b4-91d7-394c2075c174 -->
+  <rule id="383421" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-0043 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://nerqnacjmdy3obvevyol7qhazkwkv57dwqvye5v46k5bcujtfa6sduad\.onion/detail\?code=toitoiusa-com-usa-15gb</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

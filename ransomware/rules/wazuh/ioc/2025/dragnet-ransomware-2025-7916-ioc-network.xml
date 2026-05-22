@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7916 — Ransomware C2 Communication | Status: test | Sigma ID: b49248b9-d099-59d0-a94d-85a3fec4efaa -->
+  <rule id="349248" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7916 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd\.onion/blog/post/steuerberater-scheererde/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

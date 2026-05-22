@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-4944 — Shadow Copy Deletion (funksec) | Status: experimental | Sigma ID: e2bb505f-d188-5877-bb5f-fcb5e2dc9acd -->
+  <rule id="153950" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-4944 — Shadow Copy Deletion (funksec)</description>
+    <field name="process.args" type="pcre2">Get-WmiObject Win32_ShadowCopy</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2">^delete$|^shadows$</field>
+    <field name="process.name" type="pcre2">\\vssadmin\.exe$</field>
+    <field name="process.args" type="pcre2">^shadowcopy$|^delete$</field>
+    <field name="process.name" type="pcre2">\\wmic\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-0275 — Mass File Rename (toufan) | Status: deprecated | Sigma ID: de3db9a0-0286-5314-b6a5-c7775b33a9f2 -->
+  <rule id="393079" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-0275 — Mass File Rename (toufan)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

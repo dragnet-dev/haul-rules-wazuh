@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-1783 — Mass File Rename (bqtlock) | Status: experimental | Sigma ID: f13d64aa-bfed-5f04-afd0-2f9afeb7eb5a -->
+  <rule id="722164" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-1783 — Mass File Rename (bqtlock)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

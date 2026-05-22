@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-2045 — Shadow Copy Deletion (conti) | Status: deprecated | Sigma ID: bfc1297c-9c91-53d4-97e5-5ae6042f3d7c -->
+  <rule id="468129" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-2045 — Shadow Copy Deletion (conti)</description>
+    <field name="process.args" type="pcre2">Get-WmiObject Win32_ShadowCopy</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2">^delete$|^shadows$</field>
+    <field name="process.name" type="pcre2">\\vssadmin\.exe$</field>
+    <field name="process.args" type="pcre2">^shadowcopy$|^delete$</field>
+    <field name="process.name" type="pcre2">\\wmic\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0563 — Recovery Inhibition (spacebears) | Status: test | Sigma ID: 08dea89c-6b5b-5a9b-82b8-51a23bce6ea3 -->
+  <rule id="133089" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0563 — Recovery Inhibition (spacebears)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

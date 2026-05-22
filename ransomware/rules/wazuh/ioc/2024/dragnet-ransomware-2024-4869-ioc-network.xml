@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-4869 — Ransomware C2 Communication | Status: experimental | Sigma ID: 3dd5a469-e2ac-5f71-ba08-6fa3225bfb46 -->
+  <rule id="783304" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-4869 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad\.onion/zuber-gardner-cpas/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

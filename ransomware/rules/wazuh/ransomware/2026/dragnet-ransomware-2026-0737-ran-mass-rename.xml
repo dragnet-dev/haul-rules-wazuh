@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0737 — Mass File Rename (everest) | Status: test | Sigma ID: 2791dd70-6f56-5b42-bebd-24c5bab3b0e9 -->
+  <rule id="947177" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0737 — Mass File Rename (everest)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

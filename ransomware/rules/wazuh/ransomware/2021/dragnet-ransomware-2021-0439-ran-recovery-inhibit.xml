@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-0439 — Recovery Inhibition (lapsus$) | Status: deprecated | Sigma ID: b27c0ada-f450-5b7a-8f94-e92c02c2eb73 -->
+  <rule id="287050" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-0439 — Recovery Inhibition (lapsus$)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

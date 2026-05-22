@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-6869 — Ransomware C2 Communication | Status: experimental | Sigma ID: 7767e9f9-edfa-5cbc-92eb-ea3a4f8f79c8 -->
+  <rule id="442869" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-6869 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://funksec\.top/cimenyan\.desa\.id</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

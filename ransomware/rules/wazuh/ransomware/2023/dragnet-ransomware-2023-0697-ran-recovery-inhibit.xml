@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-0697 — Recovery Inhibition (losttrust) | Status: deprecated | Sigma ID: 623ea861-f359-5fef-a748-e38547ed3741 -->
+  <rule id="797228" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-0697 — Recovery Inhibition (losttrust)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

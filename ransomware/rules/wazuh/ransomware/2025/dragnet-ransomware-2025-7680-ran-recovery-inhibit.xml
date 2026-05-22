@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-7680 — Recovery Inhibition (blackshrantac) | Status: test | Sigma ID: 97b7ef73-21c3-5230-b6cd-89bd24ebec70 -->
+  <rule id="503311" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-7680 — Recovery Inhibition (blackshrantac)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

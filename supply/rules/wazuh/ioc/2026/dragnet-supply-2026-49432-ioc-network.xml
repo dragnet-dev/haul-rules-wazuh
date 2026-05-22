@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [IOC]: dragnet-supply-2026-49432 — C2 Network Communication | Status: test | Sigma ID: ba315551-1c72-5e56-b228-b9513468ea22 -->
+  <rule id="163155" level="10">
+    <description>Dragnet [IOC]: dragnet-supply-2026-49432 — C2 Network Communication</description>
+    <field name="network.destination.hostname" type="pcre2">https://tdtqy-oyaaa-aaaae-af2dq-cai\.raw\.icp0\.io/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-0118 — Recovery Inhibition (arvinclub) | Status: deprecated | Sigma ID: 1224ffd4-3ca4-5552-8871-e74359aa134a -->
+  <rule id="617597" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-0118 — Recovery Inhibition (arvinclub)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

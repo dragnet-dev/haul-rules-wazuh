@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-1644 — Ransomware C2 Communication | Status: experimental | Sigma ID: a78e3734-7c7d-5f80-badc-01000fef0104 -->
+  <rule id="926237" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-1644 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">https://apos\.blog/apos-raas/Bitz-Softwares-bc9e829383bb4f0086ed1598c052cefe</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

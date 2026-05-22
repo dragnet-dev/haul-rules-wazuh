@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-4714 — Ransomware C2 Communication | Status: experimental | Sigma ID: 8a52cb55-eea1-582b-88d3-26206d64f46d -->
+  <rule id="946315" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-4714 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad\.onion//companies/aircanada\.com</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-1179 — Ransomware C2 Communication | Status: experimental | Sigma ID: a3e8137f-67c3-5ae9-86e9-26b08a240a4d -->
+  <rule id="862813" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-1179 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad\.onion/\./2024/07/08/wagner-meinert/index\.html</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

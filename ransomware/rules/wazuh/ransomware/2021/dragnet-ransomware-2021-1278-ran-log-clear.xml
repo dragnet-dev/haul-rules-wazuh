@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-1278 — Event Log Clearing (lockbit2) | Status: deprecated | Sigma ID: 94bf96eb-1425-5c1c-9cbd-fd4fed7d4598 -->
+  <rule id="725596" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-1278 — Event Log Clearing (lockbit2)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2191 — Recovery Inhibition (handala) | Status: stable | Sigma ID: 94a97152-501a-54d2-a91d-9da79f3880bc -->
+  <rule id="714971" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2191 — Recovery Inhibition (handala)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

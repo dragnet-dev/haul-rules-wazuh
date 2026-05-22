@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-2852 — Ransomware C2 Communication | Status: experimental | Sigma ID: b6d82494-95bd-50e4-b6bd-ac6a09de1b8f -->
+  <rule id="169824" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-2852 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://lynxblog\.net/leaks/67bc556d44fac8dca14c6a6a</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

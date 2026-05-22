@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0574 — Mass File Rename (BrainCipher) | Status: stable | Sigma ID: 345e4e06-f2c8-57b5-baec-00e4fc43d404 -->
+  <rule id="855180" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0574 — Mass File Rename (BrainCipher)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

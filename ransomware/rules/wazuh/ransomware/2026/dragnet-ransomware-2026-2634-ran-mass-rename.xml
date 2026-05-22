@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2634 — Mass File Rename (fulcrumsec) | Status: stable | Sigma ID: 7c69c563-80fa-5b77-8b68-f549d700297a -->
+  <rule id="295165" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2634 — Mass File Rename (fulcrumsec)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

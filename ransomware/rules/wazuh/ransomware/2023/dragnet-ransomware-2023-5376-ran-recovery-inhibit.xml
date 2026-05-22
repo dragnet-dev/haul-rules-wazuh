@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-5376 — Recovery Inhibition (abyss) | Status: deprecated | Sigma ID: 85ff78b1-3bad-569b-a9a6-cf0e4d3a174a -->
+  <rule id="501578" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-5376 — Recovery Inhibition (abyss)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

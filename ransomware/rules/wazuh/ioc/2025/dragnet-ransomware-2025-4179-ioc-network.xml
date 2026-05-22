@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-4179 — Ransomware C2 Communication | Status: test | Sigma ID: 08f290ce-4388-57b6-b4f9-ad67d04d9e8f -->
+  <rule id="592652" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-4179 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd\.onion/blog/post/reger-zahntechnikde/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2020-0225 — Recovery Inhibition (nefilim) | Status: deprecated | Sigma ID: 655e6be7-fa19-5eee-9930-caa476d1c821 -->
+  <rule id="879147" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2020-0225 — Recovery Inhibition (nefilim)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-2278 — Recovery Inhibition (snatch) | Status: experimental | Sigma ID: 82fc1315-7107-5d7c-9dd4-179911e4333c -->
+  <rule id="424413" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-2278 — Recovery Inhibition (snatch)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

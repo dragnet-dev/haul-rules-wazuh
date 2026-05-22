@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0006 — Recovery Inhibition (anubis) | Status: stable | Sigma ID: 68c49f1e-e6b5-5dff-ba20-e2bd7672db11 -->
+  <rule id="960799" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0006 — Recovery Inhibition (anubis)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2815 — Recovery Inhibition (blacknevas) | Status: stable | Sigma ID: 388cb3a2-e1c2-5a01-954f-b7ddf91f1404 -->
+  <rule id="725018" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2815 — Recovery Inhibition (blacknevas)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [IOC]: dragnet-supply-2026-209990 — Malicious File Hash | Status: test | Sigma ID: 511f1047-9e54-5473-a670-72a8f09fa397 -->
+  <rule id="191104" level="8">
+    <description>Dragnet [IOC]: dragnet-supply-2026-209990 — Malicious File Hash</description>
+    <field name="file.hash.sha256" type="pcre2">6a416b72ff24804abc12484a3b41413a8580acedd8a5f8c84224fcf0732c2f8e</field>
+    <mitre>
+      <id>T1195.002</id>
+    </mitre>
+  </rule>
+</group>

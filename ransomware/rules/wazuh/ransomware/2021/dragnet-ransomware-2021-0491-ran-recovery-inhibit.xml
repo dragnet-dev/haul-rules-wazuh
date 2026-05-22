@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-0491 — Recovery Inhibition (ransomexx) | Status: experimental | Sigma ID: 0c105bd2-e3cb-50f8-901f-521f558406f8 -->
+  <rule id="499069" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-0491 — Recovery Inhibition (ransomexx)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

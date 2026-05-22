@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-4857 — Recovery Inhibition (IMNCrew) | Status: experimental | Sigma ID: 77eeb5e7-378c-52f2-911b-b28b6b70dfb4 -->
+  <rule id="592115" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-4857 — Recovery Inhibition (IMNCrew)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

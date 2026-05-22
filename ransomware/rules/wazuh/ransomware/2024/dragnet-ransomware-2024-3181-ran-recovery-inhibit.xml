@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-3181 — Recovery Inhibition (vanirgroup) | Status: deprecated | Sigma ID: 12c4685a-e9f2-5614-a8d6-7013b9db0c0f -->
+  <rule id="344685" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-3181 — Recovery Inhibition (vanirgroup)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

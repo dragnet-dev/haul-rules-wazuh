@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-3069 — Mass File Rename (lockbit2) | Status: deprecated | Sigma ID: 0f9f81c6-d7af-5f4a-8ffe-7f41c705cfb8 -->
+  <rule id="595708" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-3069 — Mass File Rename (lockbit2)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

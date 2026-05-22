@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-4843 — Recovery Inhibition (blackbyte) | Status: deprecated | Sigma ID: 3632cf30-1486-55bd-a22f-dfbef1d7d53c -->
+  <rule id="399993" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-4843 — Recovery Inhibition (blackbyte)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

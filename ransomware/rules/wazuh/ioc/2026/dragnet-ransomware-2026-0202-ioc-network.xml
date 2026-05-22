@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0202 — Ransomware C2 Communication | Status: stable | Sigma ID: 88e74bdc-66b6-5e72-a157-7bd7731da354 -->
+  <rule id="576395" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0202 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid\.onion/blog/\?post_uuid=28239bd8-a606-45ef-86c0-1e2399ac547d</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

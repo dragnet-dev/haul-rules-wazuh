@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-2354 — Recovery Inhibition (ElDorado) | Status: deprecated | Sigma ID: 097bf142-4337-5ece-8ccc-a551acf2d926 -->
+  <rule id="802314" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-2354 — Recovery Inhibition (ElDorado)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

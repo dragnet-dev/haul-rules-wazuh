@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0568 — Event Log Clearing (AiLock) | Status: deprecated | Sigma ID: 6bc17c2d-13d4-5c58-95fa-bb63a7003c97 -->
+  <rule id="158684" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0568 — Event Log Clearing (AiLock)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

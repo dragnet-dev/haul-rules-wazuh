@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-5299 — Ransomware C2 Communication | Status: experimental | Sigma ID: 60be04ce-1a37-5c1d-9df6-51608887583b -->
+  <rule id="755004" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-5299 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">https://cactusbloguuodvqjmnzlwetjlpj6aggc6iocwhuupb47laukux7ckid\.onion/posts/PBS</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

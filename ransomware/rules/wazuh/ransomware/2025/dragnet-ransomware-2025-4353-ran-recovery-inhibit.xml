@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-4353 — Recovery Inhibition (payoutsking) | Status: experimental | Sigma ID: 8e3e3ac5-b0d9-513b-a726-79c9617dd187 -->
+  <rule id="145178" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-4353 — Recovery Inhibition (payoutsking)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

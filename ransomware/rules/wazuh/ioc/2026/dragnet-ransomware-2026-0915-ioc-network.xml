@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0915 — Ransomware C2 Communication | Status: stable | Sigma ID: 7e90a092-1008-5cd0-9a5d-fc84930fecf8 -->
+  <rule id="330500" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0915 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd\.onion/blog/post/mbk-gmbhde/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

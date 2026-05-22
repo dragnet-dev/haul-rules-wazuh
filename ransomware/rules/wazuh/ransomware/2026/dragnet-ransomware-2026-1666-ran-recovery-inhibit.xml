@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1666 — Recovery Inhibition (worldleaks) | Status: stable | Sigma ID: f9037dd1-3836-5ed4-abfc-0d8a5c13e336 -->
+  <rule id="844605" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-1666 — Recovery Inhibition (worldleaks)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

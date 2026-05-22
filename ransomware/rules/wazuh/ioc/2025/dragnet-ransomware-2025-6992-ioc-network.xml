@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-6992 — Ransomware C2 Communication | Status: test | Sigma ID: 7a17718c-b1c5-5e9f-aa54-be69982ac9f6 -->
+  <rule id="421771" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-6992 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://i62huw7ve22rpyw6lnq3kmfump2dmsg4xpveec3ere73njwatrz74gad\.onion/Company/OHI/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2020-0163 — Mass File Rename (netwalker) | Status: deprecated | Sigma ID: 13ad20ec-663a-5d9f-8c20-cc2ea149ab21 -->
+  <rule id="301934" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2020-0163 — Mass File Rename (netwalker)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

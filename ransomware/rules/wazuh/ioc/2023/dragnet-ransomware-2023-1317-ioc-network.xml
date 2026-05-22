@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-1317 — Ransomware C2 Communication | Status: experimental | Sigma ID: 05e07b72-0cc5-5e3a-8fb6-e6d5d890aa7b -->
+  <rule id="705237" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-1317 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">https://weerwolven\.biz/ru/vasexperts-ru\.html</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

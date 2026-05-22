@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-5818 — Event Log Clearing (mogilevich) | Status: deprecated | Sigma ID: 9bf2a914-a0ef-53a3-bcf7-002c15528162 -->
+  <rule id="492429" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-5818 — Event Log Clearing (mogilevich)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

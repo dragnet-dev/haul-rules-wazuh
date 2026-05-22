@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-2268 — Recovery Inhibition (donutleaks) | Status: deprecated | Sigma ID: 8dfd6c42-a9e8-5dcd-b2ef-1d9372081389 -->
+  <rule id="515948" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-2268 — Recovery Inhibition (donutleaks)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-6919 — Recovery Inhibition (blacknevas) | Status: experimental | Sigma ID: c85a19de-c408-54e3-b2c7-fd390b640364 -->
+  <rule id="357019" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-6919 — Recovery Inhibition (blacknevas)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

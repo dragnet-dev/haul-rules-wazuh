@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-7409 — Recovery Inhibition (hellcat) | Status: deprecated | Sigma ID: be59ba00-22c7-5f95-b607-06a0c9b62bd5 -->
+  <rule id="479290" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-7409 — Recovery Inhibition (hellcat)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2023-2086 — Mass File Rename (avoslocker) | Status: deprecated | Sigma ID: 570a88c9-0f12-5d58-abef-fd3a4c176536 -->
+  <rule id="309420" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2023-2086 — Mass File Rename (avoslocker)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

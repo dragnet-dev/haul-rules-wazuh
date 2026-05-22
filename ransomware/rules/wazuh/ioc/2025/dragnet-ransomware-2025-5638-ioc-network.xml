@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-5638 — Ransomware C2 Communication | Status: experimental | Sigma ID: 4550baa4-5c18-5ac8-a782-a31b00ee8622 -->
+  <rule id="364986" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-5638 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://nerqnacjmdy3obvevyol7qhazkwkv57dwqvye5v46k5bcujtfa6sduad\.onion/detail\?code=summitcollege-edu-usa-370gb</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

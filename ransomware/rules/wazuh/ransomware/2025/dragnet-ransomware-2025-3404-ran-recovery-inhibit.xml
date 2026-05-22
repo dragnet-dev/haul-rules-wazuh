@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-3404 — Recovery Inhibition (spacebears) | Status: test | Sigma ID: 139f2967-f8aa-535b-bec2-32722b311dfb -->
+  <rule id="539296" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-3404 — Recovery Inhibition (spacebears)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

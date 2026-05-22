@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0248 — Ransomware C2 Communication | Status: test | Sigma ID: d6159dac-e831-5d0e-83e3-0aec6b3e7d26 -->
+  <rule id="478557" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0248 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad\.onion/news/Warning_about_the_negotiator__All4you/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

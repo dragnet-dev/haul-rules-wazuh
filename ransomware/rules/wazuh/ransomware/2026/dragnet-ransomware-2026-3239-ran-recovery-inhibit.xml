@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-3239 — Recovery Inhibition (AiLock) | Status: deprecated | Sigma ID: 4fc7c97c-0e03-50dc-928b-209a22ca5d77 -->
+  <rule id="342849" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-3239 — Recovery Inhibition (AiLock)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

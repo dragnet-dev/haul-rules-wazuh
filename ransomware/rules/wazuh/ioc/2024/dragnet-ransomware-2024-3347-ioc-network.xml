@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3347 — Ransomware C2 Communication | Status: experimental | Sigma ID: e9a4a93e-1220-5a06-9606-8b000b8ffc97 -->
+  <rule id="331149" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3347 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://k67ivvik3dikqi4gy4ua7xa6idijl4si7k5ad5lotbaeirfcsx4sgbid\.onion/vitaldent\.com</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

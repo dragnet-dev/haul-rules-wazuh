@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-0741 — Recovery Inhibition (ALP-001) | Status: stable | Sigma ID: 6d0017aa-8273-5b30-8462-f96957778643 -->
+  <rule id="290017" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-0741 — Recovery Inhibition (ALP-001)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

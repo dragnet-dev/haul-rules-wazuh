@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-1321 — Ransomware C2 Communication | Status: experimental | Sigma ID: 145614f8-13b0-59d0-a802-9c40f8519981 -->
+  <rule id="629839" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-1321 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd\.onion/\?id=STANTONWILLIAMS</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

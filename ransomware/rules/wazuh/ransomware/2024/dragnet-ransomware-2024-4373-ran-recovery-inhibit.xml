@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-4373 — Recovery Inhibition (helldown) | Status: experimental | Sigma ID: d08c11f6-103d-5e7c-b759-0bf6724b72fa -->
+  <rule id="394011" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-4373 — Recovery Inhibition (helldown)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

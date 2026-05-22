@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2022-1605 — Event Log Clearing (conti) | Status: deprecated | Sigma ID: 39089e89-c3ff-5aee-95f1-f52cadbcfe6f -->
+  <rule id="954388" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2022-1605 — Event Log Clearing (conti)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

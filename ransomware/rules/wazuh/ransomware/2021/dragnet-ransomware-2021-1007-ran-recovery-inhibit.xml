@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-1007 — Recovery Inhibition (azroteam) | Status: deprecated | Sigma ID: 83382e3a-5e3a-52d6-a453-8a4931926ad4 -->
+  <rule id="534126" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-1007 — Recovery Inhibition (azroteam)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

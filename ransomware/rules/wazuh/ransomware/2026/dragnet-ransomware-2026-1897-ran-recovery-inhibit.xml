@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1897 — Recovery Inhibition (qilin) | Status: test | Sigma ID: 765de3e4-0400-59c7-a22f-d2cd68308dca -->
+  <rule id="260623" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-1897 — Recovery Inhibition (qilin)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

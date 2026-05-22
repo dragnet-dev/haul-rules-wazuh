@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1756 — Recovery Inhibition (ALP-001) | Status: stable | Sigma ID: 39b3dd67-1c1c-5103-b1ab-39ae6fbd28f3 -->
+  <rule id="826589" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-1756 — Recovery Inhibition (ALP-001)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

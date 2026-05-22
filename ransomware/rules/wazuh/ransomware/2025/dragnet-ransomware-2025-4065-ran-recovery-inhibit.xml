@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-4065 — Recovery Inhibition (akira) | Status: deprecated | Sigma ID: 06018f3f-49f8-55a4-b05f-c3d2c49d911d -->
+  <rule id="208543" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-4065 — Recovery Inhibition (akira)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

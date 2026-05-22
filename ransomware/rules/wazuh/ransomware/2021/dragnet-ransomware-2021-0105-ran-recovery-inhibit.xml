@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-0105 — Recovery Inhibition (avaddon) | Status: deprecated | Sigma ID: 6d630d12-e89e-53d5-b91d-da74a44d8628 -->
+  <rule id="954093" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-0105 — Recovery Inhibition (avaddon)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-2471 — Recovery Inhibition (coinbasecartel) | Status: stable | Sigma ID: 5efbe4c5-2cb3-5421-bca4-55e1a38689b2 -->
+  <rule id="390544" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-2471 — Recovery Inhibition (coinbasecartel)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

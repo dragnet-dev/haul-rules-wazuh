@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [IOC]: dragnet-ransomware-2026-3465 — Malicious File Hash | Status: test | Sigma ID: 87f74342-aa14-5c54-ac8b-87f72974d687 -->
+  <rule id="607743" level="8">
+    <description>Dragnet [IOC]: dragnet-ransomware-2026-3465 — Malicious File Hash</description>
+    <field name="file.hash.md5" type="pcre2">7886f04af218392a1688528ff599a4eb</field>
+    <field name="file.hash.md5" type="pcre2">35702b428046bc2eca42ec97adf4f598</field>
+    <mitre>
+      <id>T1195.002</id>
+    </mitre>
+  </rule>
+</group>

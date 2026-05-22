@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-3639 — Event Log Clearing (sarcoma) | Status: deprecated | Sigma ID: 4ef470c8-b2f2-512c-ad6e-42408f3daae7 -->
+  <rule id="463470" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-3639 — Event Log Clearing (sarcoma)</description>
+    <field name="process.args" type="pcre2">Clear-EventLog</field>
+    <field name="process.name" type="pcre2">\\powershell\.exe$|\\pwsh\.exe$</field>
+    <field name="process.args" type="pcre2"> cl | clear-log </field>
+    <field name="process.name" type="pcre2">\\wevtutil\.exe$</field>
+    <mitre>
+      <id>T1070.001</id>
+    </mitre>
+  </rule>
+</group>

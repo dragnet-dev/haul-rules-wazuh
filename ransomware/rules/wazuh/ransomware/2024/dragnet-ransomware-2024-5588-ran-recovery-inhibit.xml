@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2024-5588 — Recovery Inhibition (blacklock) | Status: experimental | Sigma ID: f6a6897a-4e91-56dd-be15-996ff921808b -->
+  <rule id="806689" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2024-5588 — Recovery Inhibition (blacklock)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

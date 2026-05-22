@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2026-1376 — Mass File Rename (AiLock) | Status: deprecated | Sigma ID: f3f31218-e1ab-5ef0-ae81-9228a31edaad -->
+  <rule id="763312" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2026-1376 — Mass File Rename (AiLock)</description>
+    <field name="file.path" type="pcre2">\.encrypted$|\.locked$|\.ransom$</field>
+    <mitre>
+      <id>T1486</id>
+    </mitre>
+  </rule>
+</group>

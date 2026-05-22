@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-3305 — Ransomware C2 Communication | Status: experimental | Sigma ID: e465da4d-a84d-518a-a777-e4b9c30fb8e2 -->
+  <rule id="203258" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-3305 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd\.onion/\?id=BACCARAT</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

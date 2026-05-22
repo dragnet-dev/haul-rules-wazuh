@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2020-0247 — Recovery Inhibition (netwalker) | Status: deprecated | Sigma ID: 81fa7cb4-e583-5902-ac4d-97d9455b44f7 -->
+  <rule id="757884" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2020-0247 — Recovery Inhibition (netwalker)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-1358 — Ransomware C2 Communication | Status: stable | Sigma ID: 6efbc51f-24f1-5a45-8575-f9a8c6444565 -->
+  <rule id="145885" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-1358 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">https://handala-team\.to/official-statement-by-handala-group-in-response-to-threats-from-the-us-and-its-allies/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

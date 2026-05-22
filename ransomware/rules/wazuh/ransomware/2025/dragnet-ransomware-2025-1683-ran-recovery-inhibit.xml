@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2025-1683 — Recovery Inhibition (arcusmedia) | Status: experimental | Sigma ID: dd5a05bd-8577-519d-a596-994fedb1e036 -->
+  <rule id="945005" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2025-1683 — Recovery Inhibition (arcusmedia)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

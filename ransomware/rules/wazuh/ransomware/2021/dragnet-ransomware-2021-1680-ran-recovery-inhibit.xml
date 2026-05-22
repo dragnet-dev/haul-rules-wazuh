@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-1680 — Recovery Inhibition (marketo) | Status: deprecated | Sigma ID: fbfe3bf9-de7e-5315-9c18-44487e594062 -->
+  <rule id="521659" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-1680 — Recovery Inhibition (marketo)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

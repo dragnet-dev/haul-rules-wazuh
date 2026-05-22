@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware]: dragnet-ransomware-2021-0020 — Recovery Inhibition (pysa) | Status: deprecated | Sigma ID: 54d2b346-5659-5884-b0eb-7e13e3e0044d -->
+  <rule id="603633" level="10">
+    <description>Dragnet [Ransomware]: dragnet-ransomware-2021-0020 — Recovery Inhibition (pysa)</description>
+    <field name="process.args" type="pcre2">recoveryenabled no|bootstatuspolicy ignoreallfailures</field>
+    <field name="process.name" type="pcre2">\\bcdedit\.exe$</field>
+    <mitre>
+      <id>T1490</id>
+    </mitre>
+  </rule>
+</group>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3338 — Ransomware C2 Communication | Status: experimental | Sigma ID: 84f79b8f-4b3a-5c00-b348-d392ceaf6f9b -->
+  <rule id="475675" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3338 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://47glxkuxyayqrvugfumgsblrdagvrah7gttfscgzn56eyss5wg3uvmqd\.onion/packages/dbfdb86f-29e6-42e1-9e96-d3958bbecdda</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>
