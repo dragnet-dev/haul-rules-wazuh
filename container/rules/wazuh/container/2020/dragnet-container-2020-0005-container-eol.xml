@@ -3,7 +3,7 @@
   <!-- Dragnet [Container]: dragnet-container-2020-0005 — End-of-Life Base Image | Status: deprecated | Sigma ID: 300500c2-2ed8-5499-be83-2a1e2df68e0a -->
   <rule id="408012" level="10">
     <description>Dragnet [Container]: dragnet-container-2020-0005 — End-of-Life Base Image</description>
-    <field name="process.name" type="pcre2">^ubuntu:19\.10\.|^ubuntu:19\.10-</field>
+    <field name="process.name" type="pcre2">^ubuntu:19\.04\.|^ubuntu:19\.04-</field>
     <mitre>
       <id>T1610</id>
     </mitre>
