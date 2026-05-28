@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0168 — Ransomware C2 Communication | Status: stable | Sigma ID: 1d8ac7b8-bfe9-528a-903b-a2f7b545d1a1 -->
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0168 — Ransomware C2 Communication | Status: test | Sigma ID: 1d8ac7b8-bfe9-528a-903b-a2f7b545d1a1 -->
   <rule id="633723" level="10">
     <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0168 — Ransomware C2 Communication</description>
     <field name="network.destination.hostname" type="pcre2">http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd\.onion/#nebraska-hearing</field>

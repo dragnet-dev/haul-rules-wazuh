@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-4023 — Ransomware C2 Communication | Status: test | Sigma ID: e36545c4-ba1d-5cc8-808a-5318ada1a1da -->
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-4023 — Ransomware C2 Communication | Status: experimental | Sigma ID: e36545c4-ba1d-5cc8-808a-5318ada1a1da -->
   <rule id="636545" level="10">
     <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-4023 — Ransomware C2 Communication</description>
     <field name="network.destination.hostname" type="pcre2">http://longcc4fqrfcqt5lzceutylaxir6h66fp6df3oin6mvwvz6pfdbxc6qd\.onion/blog/7e4d2cc0b26635dfe620f21d6729f4cd122f8f73c1a95c65bf38693f4a6f0751/</field>
