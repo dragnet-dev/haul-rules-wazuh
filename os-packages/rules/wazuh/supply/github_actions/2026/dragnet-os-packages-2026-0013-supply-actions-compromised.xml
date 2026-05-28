@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Supply]: dragnet-os-packages-2026-0013 — Compromised GitHub Action | Status: deprecated | Sigma ID: 49c49f62-be89-5ce9-b898-4bb37cd153b2 -->
+  <rule id="474399" level="12">
+    <description>Dragnet [Supply]: dragnet-os-packages-2026-0013 — Compromised GitHub Action</description>
+    <field name="uses" type="pcre2">@google/gemini-cli@|google-github-actions/run-gemini-cli@</field>
+    <mitre>
+      <id>T1195.002</id>
+      <id>T1552.001</id>
+    </mitre>
+  </rule>
+</group>

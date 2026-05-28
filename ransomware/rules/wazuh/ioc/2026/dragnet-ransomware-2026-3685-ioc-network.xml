@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3685 — Ransomware C2 Communication | Status: stable | Sigma ID: cebd579e-5eff-5d7a-8932-d6545f14b2b2 -->
+  <rule id="892557" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3685 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad\.onion/news/Advanced_Psychiatry_Associates/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

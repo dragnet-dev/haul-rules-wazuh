@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3682 — Ransomware C2 Communication | Status: stable | Sigma ID: 78aab7e6-ad04-5be5-958d-61365524bf7a -->
+  <rule id="622197" level="10">
+    <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3682 — Ransomware C2 Communication</description>
+    <field name="network.destination.hostname" type="pcre2">http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad\.onion/news/VVO_Finance/</field>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1041</id>
+    </mitre>
+  </rule>
+</group>

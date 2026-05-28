@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Supply]: dragnet-os-packages-2025-0323 — Compromised GitHub Action | Status: deprecated | Sigma ID: f9b220f9-c8e5-5d56-930d-994b9aa22629 -->
+  <rule id="855220" level="10">
+    <description>Dragnet [Supply]: dragnet-os-packages-2025-0323 — Compromised GitHub Action</description>
+    <field name="uses" type="pcre2">reviewdog/action-setup@</field>
+    <mitre>
+      <id>T1195.002</id>
+      <id>T1552.001</id>
+    </mitre>
+  </rule>
+</group>

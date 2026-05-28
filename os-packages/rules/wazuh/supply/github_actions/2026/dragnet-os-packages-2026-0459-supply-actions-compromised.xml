@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group name="dragnet,supply_chain">
+  <!-- Dragnet [Supply]: dragnet-os-packages-2026-0459 — Compromised GitHub Action | Status: deprecated | Sigma ID: 9ba35374-86af-5c3c-986a-dfd44f7db9bd -->
+  <rule id="790353" level="12">
+    <description>Dragnet [Supply]: dragnet-os-packages-2026-0459 — Compromised GitHub Action</description>
+    <field name="uses" type="pcre2">github\.com/aquasecurity/trivy@|aquasecurity/trivy-action@|aquasecurity/setup-trivy@</field>
+    <mitre>
+      <id>T1195.002</id>
+      <id>T1552.001</id>
+    </mitre>
+  </rule>
+</group>

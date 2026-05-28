@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
-  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7097 — Ransomware C2 Communication | Status: test | Sigma ID: 50e3036b-7052-5382-be18-5e57bac001fe -->
+  <!-- Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7097 — Ransomware C2 Communication | Status: experimental | Sigma ID: 50e3036b-7052-5382-be18-5e57bac001fe -->
   <rule id="143036" level="10">
     <description>Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7097 — Ransomware C2 Communication</description>
     <field name="network.destination.hostname" type="pcre2">https://handala-hack\.to/8200-unit-corpses/</field>
