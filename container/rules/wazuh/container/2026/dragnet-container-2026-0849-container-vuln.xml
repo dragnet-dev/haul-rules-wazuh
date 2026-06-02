@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <group name="dragnet,supply_chain">
   <!-- Dragnet [Container]: dragnet-container-2026-0849 — Vulnerable Base Image Pull | Status: deprecated | Sigma ID: 8efe72ca-3cd7-5762-a1bb-70cf3d14668b -->
-  <rule id="160672" level="10">
+  <rule id="160672" level="12">
     <description>Dragnet [Container]: dragnet-container-2026-0849 — Vulnerable Base Image Pull</description>
     <field name="process.name" type="pcre2">ubuntu:12\.04|ubuntu:14\.04|ubuntu:15\.04|ubuntu:15\.10</field>
     <mitre>
