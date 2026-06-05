@@ -3,13 +3,13 @@
   <!-- Dragnet [IOC]: dragnet-supply-2025-0001 — Malicious File Hash | Status: experimental | Sigma ID: eda8d7b4-c1c8-5393-a8e3-8593753c00eb -->
   <rule id="784617" level="12">
     <description>Dragnet [IOC]: dragnet-supply-2025-0001 — Malicious File Hash</description>
+    <field name="file.hash.sha256" type="pcre2">5ae8b2343e97cc3b2c945ec34318b63f27fa2db1e3d8fbaa78c298aa63db52ed</field>
+    <field name="file.hash.sha256" type="pcre2">18f784b3bc9a0bcdcb1a8d7f51bc5f54323fc40cbd874119354ab609bef6e4cb</field>
+    <field name="file.hash.sha256" type="pcre2">8605e365edf11160aad517c7d79a3b26b62290e5072ef97b102a01ddbb343f14</field>
     <field name="file.hash.sha256" type="pcre2">2ec78d556d696e208927cc503d48e4b5eb56b31abc2870c2ed2e98d6be27fc96</field>
     <field name="file.hash.sha256" type="pcre2">2258284d65f63829bd67eaba01ef6f1ada2f593f9bbe41678b2df360bd90d3df</field>
     <field name="file.hash.sha1" type="pcre2">820fa07a7328b6cf2b417078e103721d4d8f2e79</field>
     <field name="file.hash.sha256" type="pcre2">fe64699649591948d6f960705caac86fe99600bf76e3eae29b4517705a58f0e2</field>
-    <field name="file.hash.sha256" type="pcre2">5ae8b2343e97cc3b2c945ec34318b63f27fa2db1e3d8fbaa78c298aa63db52ed</field>
-    <field name="file.hash.sha256" type="pcre2">18f784b3bc9a0bcdcb1a8d7f51bc5f54323fc40cbd874119354ab609bef6e4cb</field>
-    <field name="file.hash.sha256" type="pcre2">8605e365edf11160aad517c7d79a3b26b62290e5072ef97b102a01ddbb343f14</field>
     <mitre>
       <id>T1195.002</id>
     </mitre>
